@@ -1,0 +1,20 @@
+{
+  "name": "com.hikergames.uiextensions",
+  "displayName": "Hiker Games UI Extensions",
+  "unity": "2022.3",
+  "version": "1.0.0",
+  "dependencies": {
+    "com.unity.ugui": "1.0.0",
+    "com.unity.textmeshpro": "3.0.6",
+    "com.hikergames.ngui": "1.0.0",
+    "com.hikergames.hikerutils": "1.0.0"
+  },
+  "author": "duongrs <duong.tranthai@hikergames.com>",
+  "description": "Hiker Games UI Extensions",
+  "keywords": [
+    "hiker",
+    "ui"
+  ],
+  "license": "Hiker Games License v1.0",
+  "hideInEditor": false
+}

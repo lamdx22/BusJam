@@ -1,0 +1,14 @@
+{
+  "name": "com.hikergames.logs",
+  "displayName": "Hiker Games Log Utils",
+  "unity": "2022.3",
+  "version": "1.0.0",
+  "author": "duongrs <duong.tranthai@hikergames.com>",
+  "description": "Tool to show more convenient logs in Unity Editor",
+  "keywords": [
+    "hiker",
+    "logs"
+  ],
+  "license": "Hiker Games License v1.0",
+  "hideInEditor": false
+}

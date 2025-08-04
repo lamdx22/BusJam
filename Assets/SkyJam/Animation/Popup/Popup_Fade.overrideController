@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Popup_Fade
+  m_Controller: {fileID: 9100000, guid: dd8ae4b03a72c6a4cb37868dae1ecc8e, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 36435e2c758354705b61a9a34df0dbaa, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 1c1e1a975d960fc4b93dd0f858d0924f, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: d3112d8e56ebb482481615b689e0a28f, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: f16ffcf054513b14dbb53227994b3fcc, type: 2}

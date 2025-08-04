@@ -1,0 +1,78 @@
+success_animate.png
+	size: 1063, 1297
+	filter: Linear, Linear
+Layer 1
+	bounds: 2, 8, 110, 169
+	offsets: 2, 1, 112, 170
+	rotate: 90
+blue_arm_1
+	bounds: 111, 1043, 60, 60
+	offsets: 2, 2, 64, 64
+blue_arm_2
+	bounds: 2, 473, 55, 51
+	offsets: 2, 2, 59, 55
+blue_body
+	bounds: 192, 31, 84, 84
+	offsets: 2, 2, 88, 88
+blue_head
+	bounds: 894, 47, 121, 123
+	offsets: 2, 2, 125, 127
+	rotate: 90
+car
+	bounds: 2, 498, 817, 605
+green_arm_2
+	bounds: 981, 645, 74, 122
+green_body
+	bounds: 958, 1084, 103, 119
+	offsets: 2, 2, 107, 123
+green_eye_1
+	bounds: 173, 1079, 20, 24
+	offsets: 2, 2, 24, 28
+green_eye_2
+	bounds: 2, 1011, 21, 22
+	offsets: 2, 2, 25, 26
+green_head
+	bounds: 847, 474, 172, 170
+	offsets: 2, 2, 176, 174
+pink_arm
+	bounds: 735, 482, 163, 110
+	offsets: 1, 0, 164, 111
+	rotate: 90
+pink_body
+	bounds: 821, 646, 156, 156
+	offsets: 2, 2, 160, 160
+pink_eye_1
+	bounds: 134, 1014, 9, 27
+	offsets: 2, 2, 13, 31
+pink_eye_2
+	bounds: 2, 982, 10, 27
+	offsets: 2, 2, 14, 31
+pink_head
+	bounds: 821, 947, 147, 135
+	offsets: 2, 2, 151, 139
+plane
+	bounds: 2, 93, 1052, 404
+red_arm_1
+	bounds: 737, 2, 157, 140
+	offsets: 0, 0, 157, 142
+red_body
+	bounds: 828, 1084, 128, 154
+	offsets: 2, 2, 132, 158
+red_eye_1
+	bounds: 120, 1016, 12, 25
+	offsets: 2, 2, 16, 29
+red_eye_2
+	bounds: 173, 1048, 13, 29
+	offsets: 2, 2, 17, 33
+red_head
+	bounds: 821, 804, 142, 141
+	offsets: 2, 2, 146, 145
+red_leg
+	bounds: 2, 1035, 107, 68
+	offsets: 2, 2, 111, 72
+shadow
+	bounds: 2, 1105, 824, 190
+vach duong
+	bounds: 2, 56, 184, 190
+	offsets: 1, 0, 186, 191
+	rotate: 90

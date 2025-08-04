@@ -1,0 +1,14 @@
+{
+  "name": "com.hikergames.mempool",
+  "displayName": "Hiker Games Memory Container Pool",
+  "unity": "2022.3",
+  "version": "1.0.0",
+  "author": "duongrs <duong.tranthai@hikergames.com>",
+  "description": "Memory Pool for C# generic container",
+  "keywords": [
+    "hiker",
+    "mempool"
+  ],
+  "license": "Hiker Games License v1.0",
+  "hideInEditor": false
+}

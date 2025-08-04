@@ -1,0 +1,18 @@
+{
+  "name": "com.hikergames.ngui",
+  "displayName": "Hiker Games NGUI Utils Fork",
+  "unity": "2022.3",
+  "version": "1.0.0",
+  "dependencies": {
+    "com.unity.ugui": "1.0.0",
+    "com.unity.textmeshpro": "3.0.6"
+  },
+  "author": "duongrs <duong.tranthai@hikergames.com>",
+  "description": "NGUI Utils Fork for convenience",
+  "keywords": [
+    "hiker",
+    "ngui"
+  ],
+  "license": "Hiker Games License v1.0",
+  "hideInEditor": false
+}

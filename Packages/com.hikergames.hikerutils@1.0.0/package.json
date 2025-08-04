@@ -1,0 +1,18 @@
+{
+  "name": "com.hikergames.hikerutils",
+  "displayName": "Hiker Games Unity Utils",
+  "unity": "2022.3",
+  "version": "1.0.0",
+  "dependencies": {
+    "com.unity.ugui": "1.0.0",
+    "com.unity.textmeshpro": "3.0.6"
+  },
+  "author": "duongrs <duong.tranthai@hikergames.com>",
+  "description": "Gameobjects utilities",
+  "keywords": [
+    "hiker",
+    "utils"
+  ],
+  "license": "Hiker Games License v1.0",
+  "hideInEditor": false
+}

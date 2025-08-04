@@ -1,0 +1,20 @@
+{
+    "name": "Hiker.GUIManager",
+    "rootNamespace": "",
+    "references": [
+        "GUID:2d7dd04583b7eb440b50f44addad10be",
+        "GUID:75469ad4d38634e559750d17036d5f7c",
+        "GUID:8176a674e186b7a429b69eccf00d20de",
+        "GUID:8fdce8ad5cb44d14faf509ee8428583a",
+        "GUID:34c8f64ecacafc34898f8659ad0832b5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

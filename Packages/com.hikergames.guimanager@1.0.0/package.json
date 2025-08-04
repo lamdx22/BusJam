@@ -1,0 +1,19 @@
+{
+  "name": "com.hikergames.guimanager",
+  "displayName": "Hiker Games GUI Manager",
+  "unity": "2022.3",
+  "version": "1.0.0",
+  "dependencies": {
+    "com.hikergames.mempool": "1.0.0",
+    "com.unity.ugui": "1.0.0",
+    "com.hikergames.hikerutils": "1.0.0"
+  },
+  "author": "duongrs <duong.tranthai@hikergames.com>",
+  "description": "GUI Manager",
+  "keywords": [
+    "hiker",
+    "guimanager"
+  ],
+  "license": "Hiker Games License v1.0",
+  "hideInEditor": false
+}

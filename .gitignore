@@ -1,0 +1,13 @@
+.svn
+.vs
+.vsconfig
+Temp
+Logs
+Library
+UserSettings
+obj
+Build
+*.csproj
+*.sln
+LunaTemp
+Assets/SVC_Luna.asset.*
