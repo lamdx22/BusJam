@@ -104,7 +104,7 @@ static public class NGUITools
 
         if (clip != null && volume > 0.01f)
         {
-            if (mListener == null || !NGUITools.GetActive(mListener))
+            if (mListener == null || !NGUITools.GetActive(mListener.gameObject))
             {
                 AudioListener[] listeners = GameObject.FindObjectsOfType(typeof(AudioListener)) as AudioListener[];
 
@@ -112,7 +112,7 @@ static public class NGUITools
                 {
                     for (int i = 0; i < listeners.Length; ++i)
                     {
-                        if (NGUITools.GetActive(listeners[i]))
+                        if (NGUITools.GetActive(listeners[i].gameObject))
                         {
                             mListener = listeners[i];
                             break;
@@ -128,7 +128,7 @@ static public class NGUITools
                     var cam = Camera.main;
 #endif
                     if (cam == null) cam = GameObject.FindObjectOfType(typeof(Camera)) as Camera;
-                    if (cam != null) mListener = cam.gameObject.AddComponent<AudioListener>();
+                    if (cam != null) mListener = cam.GetComponent<AudioListener>();  //mListener = cam.gameObject.AddComponent<AudioListener>();
                 }
             }
 
@@ -145,7 +145,7 @@ static public class NGUITools
                 }
 
 #if !UNITY_FLASH
-                audioSource.priority = 50;
+                //audioSource.priority = 50;
                 audioSource.pitch = pitch;
 #endif
                 audioSource.PlayOneShot(clip, volume);
@@ -1632,16 +1632,17 @@ static public class NGUITools
         return mb && mb.enabled && mb.gameObject.activeInHierarchy;
     }
 
+    public static bool GetActive(GameObject go)
+    {
+        return go != null && go.activeInHierarchy;
+    }
+
     /// <summary>
     /// Unity4 has changed GameObject.active to GameObject.activeself.
     /// </summary>
 
     //[System.Diagnostics.DebuggerHidden]
     //[System.Diagnostics.DebuggerStepThrough]
-    static public bool GetActive(GameObject go)
-    {
-        return go && go.activeInHierarchy;
-    }
 
     /// <summary>
     /// Unity4 has changed GameObject.active to GameObject.SetActive.

@@ -60,8 +60,9 @@ namespace Hiker.GUI
         {
             if (DisablePopupQueue == false)
             {
-                if (activePopups.Count == 0 && queuePopups.TryDequeue(out var popup))
+                if (activePopups.Count == 0 && queuePopups.Count > 0) //queuePopups.TryDequeue(out var popup))
                 {
+                    var popup = queuePopups.Dequeue();
                     if (popup != null)
                     {
                         popup.gameObject.SetActive(true);

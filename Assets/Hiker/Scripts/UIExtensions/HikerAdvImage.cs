@@ -659,7 +659,7 @@ public class HikerAdvImage : MaskableGraphic, ILayoutElement, ICanvasRaycastFilt
     {
         if (!s_Initialized)
         {
-            SpriteAtlasManager.atlasRegistered += RebuildImage;
+            //UnityEngine.U2D.SpriteAtlasManager.atlasRegistered += RebuildImage;
             s_Initialized = true;
         }
 
@@ -675,7 +675,7 @@ public class HikerAdvImage : MaskableGraphic, ILayoutElement, ICanvasRaycastFilt
     {
         SetMaterialDirty();
         SetVerticesDirty();
-        SetRaycastDirty();
+        //SetRaycastDirty();
     }
 
 #if UNITY_EDITOR

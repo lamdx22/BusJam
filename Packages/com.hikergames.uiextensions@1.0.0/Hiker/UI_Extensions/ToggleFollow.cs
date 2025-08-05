@@ -42,7 +42,7 @@ namespace Hiker.UI
             }
             else
             {
-                Hiker.HikerUtils.DoAction(this, () =>
+                HikerUtils.DoAction(this, () =>
                 {
                     if (mToggle.isOn)
                     {

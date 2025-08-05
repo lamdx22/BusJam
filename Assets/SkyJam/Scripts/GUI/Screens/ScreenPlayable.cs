@@ -49,7 +49,7 @@ namespace SkyJam
         }
         public void InitLevel(int lvl)
         {
-            //lbLevel.text = string.Format(Localization.Get("LevelShortLabel"), lvl);
+            lbLevel.text = string.Format(Localization.Get("LevelShortLabel"), lvl);
 
             int doKho = GameManager.GetDoKhoLevel(lvl - 1);
             if (doKho > 0 && doKho >= doKhoObjs.Length)
@@ -96,7 +96,7 @@ namespace SkyJam
             {
                 fxFrozen.gameObject.SetActive(false);
 
-                //SoundManager.instance?.PlaySound("SFX/battle_pu_freeze_end");
+                SoundManager.instance?.PlaySound("SFX/battle_pu_freeze_end");
 
                 panelFrozenTime.DOKill();
                 panelFrozenTime.DOFade(0f, 0.15f).SetUpdate(true).OnComplete(() =>

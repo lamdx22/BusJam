@@ -155,9 +155,11 @@ namespace SkyJam
 
         void OnDequeue()
         {
+
             listMans.Dequeue();
 
-            Hiker.HikerUtils.DoAction(this, () =>
+            // Hiker.HikerUtils
+            HikerUtils.DoAction(this, () =>
             {
                 UpdateManPosInQueue();
             }, 0.15f, true);
@@ -290,7 +292,8 @@ namespace SkyJam
                     for (int j = 0; j < c.Num; ++j)
                     {
                         var mObj = Instantiate(prefab, transform).GetComponent<Man>();
-                        mObj.gameObject.hideFlags = HideFlags.HideAndDontSave;
+                        //mObj.gameObject.hideFlags = HideFlags.HideAndDontSave;
+                        //mObj.gameObject.hideFlags = HideFlags.None;
                         mObj.SetColor(c.Color);
 
                         listMans.Enqueue(mObj);

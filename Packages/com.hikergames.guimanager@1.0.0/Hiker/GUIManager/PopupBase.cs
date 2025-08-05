@@ -86,7 +86,7 @@ namespace Hiker.GUI
                 if (appearTweenAlpha)
                     appearTweenAlpha.PlayReverse();
 
-                Hiker.HikerUtils.DoAction(PopupManager.instance, Hide, timeDelayDestroy, true);
+                HikerUtils.DoAction(PopupManager.instance, Hide, timeDelayDestroy, true);
             }
             else
             {

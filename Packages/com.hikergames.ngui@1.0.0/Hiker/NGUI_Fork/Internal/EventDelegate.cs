@@ -566,8 +566,8 @@ public class EventDelegate
 				// Clear the parameters so that references are not kept
 				for (int i = 0, imax = mArgs.Length; i < imax; ++i)
 				{
-					if (mParameterInfos[i].IsIn || mParameterInfos[i].IsOut)
-					{
+					if ( mParameterInfos[i].IsOut) // mParameterInfos[i].IsIn ||
+                    {
 						mParameters[i].value = mArgs[i];
 					}
 					mArgs[i] = null;

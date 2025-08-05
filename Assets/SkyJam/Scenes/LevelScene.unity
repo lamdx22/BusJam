@@ -2703,6 +2703,86 @@ Material:
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
   m_BuildTextureStacks: []
+--- !u!21 &575027433
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/Effects/Extensions/GrayScale
+  m_Shader: {fileID: 4800000, guid: eb6605f85df3a8149a1db68382da2c36, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BrightnessAmount: 1
+    - _ColorMask: 15
+    - _EffectAmount: 0.85
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
+--- !u!21 &598930142
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI/Effects/Extensions/GrayScale
+  m_Shader: {fileID: 4800000, guid: eb6605f85df3a8149a1db68382da2c36, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Ints: []
+    m_Floats:
+    - _BrightnessAmount: 1
+    - _ColorMask: 15
+    - _EffectAmount: 0.85
+    - _Stencil: 0
+    - _StencilComp: 8
+    - _StencilOp: 0
+    - _StencilReadMask: 255
+    - _StencilWriteMask: 255
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!1 &641051569
 GameObject:
   m_ObjectHideFlags: 0
@@ -3320,6 +3400,7 @@ GameObject:
   m_Component:
   - component: {fileID: 828988399}
   - component: {fileID: 828988398}
+  - component: {fileID: 828988400}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3362,7 +3443,7 @@ Camera:
   far clip plane: 50
   field of view: 60
   orthographic: 1
-  orthographic size: 14.6039715
+  orthographic size: 10.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3393,46 +3474,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &868418540
-Material:
-  serializedVersion: 8
+--- !u!81 &828988400
+AudioListener:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: UI/Effects/Extensions/GrayScale
-  m_Shader: {fileID: 4800000, guid: eb6605f85df3a8149a1db68382da2c36, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _BrightnessAmount: 1
-    - _ColorMask: 15
-    - _EffectAmount: 0.85
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
+  m_GameObject: {fileID: 828988396}
+  m_Enabled: 0
 --- !u!1 &873309257
 GameObject:
   m_ObjectHideFlags: 0
@@ -4847,46 +4896,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cauHinhGame: {fileID: 11400000, guid: 400cea82a6c4fe140884f8785e829e73, type: 2}
   levelCam: {fileID: 828988398}
---- !u!21 &1446423445
-Material:
-  serializedVersion: 8
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: UI/Effects/Extensions/GrayScale
-  m_Shader: {fileID: 4800000, guid: eb6605f85df3a8149a1db68382da2c36, type: 3}
-  m_Parent: {fileID: 0}
-  m_ModifiedSerializedProperties: 0
-  m_ValidKeywords: []
-  m_InvalidKeywords: []
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_LockedProperties: 
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Ints: []
-    m_Floats:
-    - _BrightnessAmount: 1
-    - _ColorMask: 15
-    - _EffectAmount: 0.85
-    - _Stencil: 0
-    - _StencilComp: 8
-    - _StencilOp: 0
-    - _StencilReadMask: 255
-    - _StencilWriteMask: 255
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-  m_BuildTextureStacks: []
 --- !u!21 &1478474882
 Material:
   serializedVersion: 8
@@ -5295,6 +5304,71 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9033959943030408714, guid: 3eea84d93d96b61498248f0ee926947e, type: 3}
   m_PrefabInstance: {fileID: 1673020427}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1683050099
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 517740985346036160, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_ColliderPaths.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974403990882611439, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.76
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974403990882611439, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 8.02
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974403990882611439, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974403990882611439, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974403990882611439, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974403990882611439, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974403990882611439, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974403990882611439, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974403990882611439, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1974403990882611439, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2620621484136289449, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_Name
+      value: L1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2620621484136289449, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
 --- !u!1 &1699400098
 GameObject:
   m_ObjectHideFlags: 0
@@ -5639,7 +5713,7 @@ MonoBehaviour:
   popupLose: {fileID: 1176644806}
   urlStore: https://play.google.com/store/apps/details?id=com.fc.hk.color.bus.jam.block.puzzle
   levels:
-  - {fileID: 6237521044942776091, guid: 366564e6df2befa4b8ac7b77b4f93676, type: 3}
+  - {fileID: 5884416639298549057, guid: e7b9c7273557a354494f0a491f9161c3, type: 3}
   - {fileID: 5884416639298549057, guid: 5b0859d59d268764491efea513dfddab, type: 3}
   levelNums: 0100000002000000
 --- !u!4 &1799230292
@@ -5996,3 +6070,4 @@ SceneRoots:
   - {fileID: 873309261}
   - {fileID: 464585643}
   - {fileID: 975309092}
+  - {fileID: 1683050099}

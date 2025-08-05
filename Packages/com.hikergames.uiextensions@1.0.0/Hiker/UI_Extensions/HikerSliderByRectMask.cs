@@ -42,7 +42,7 @@ namespace Hiker.UI
                 if (rectTran)
                 {
                     var rect = rectTran.rect;
-                    rectMask.padding = GetPaddingByValue(mValue, rect.width, rect.height);
+                    //rectMask.padding = GetPaddingByValue(mValue, rect.width, rect.height);
                 }
             }
         }

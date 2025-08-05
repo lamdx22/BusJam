@@ -38,6 +38,12 @@ namespace SkyJam
                 positioner.spline = GetComponentInParent<SplineComputer>();
             }
 
+            if (positioner.spline != null)
+            {
+                //Debug.Log($"[Man] OnEnable: spline = {positioner?.spline} has spline");
+                int a = 1;
+            }
+
             SetColor(Color);
             SetStateOnSeat(false);
         }
