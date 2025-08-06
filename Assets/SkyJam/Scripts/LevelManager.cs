@@ -800,7 +800,6 @@ namespace SkyJam
 
             if (WasPointerPressedThisFrame())
             {
-                Debug.Log("Point Press");
                 var mousePos = GetPointerPosition();
                 var ray = cam.ScreenPointToRay(mousePos);
                 //if (planeZero.Raycast(ray, out float enter))
@@ -970,7 +969,6 @@ namespace SkyJam
         {
             // verify can use powerup then increase counting
             powerUpUsed++;
-            Debug.Log("OnUseBua: " + powerUpUse);
 
             //if (GameManager.instance != null && GameManager.instance.IsUnlockFeature(GameManager.PowerUp_Hammer))
             //{
@@ -988,7 +986,6 @@ namespace SkyJam
         }
         public void OnHuyBua()
         {
-            Debug.Log("Huy Bua");
             powerUpUse = 0;
 
             ScreenPlayable.instance?.grpPowUp.SetActive(true);

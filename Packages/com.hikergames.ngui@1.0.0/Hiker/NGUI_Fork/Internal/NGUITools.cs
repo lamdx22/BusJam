@@ -128,7 +128,11 @@ static public class NGUITools
                     var cam = Camera.main;
 #endif
                     if (cam == null) cam = GameObject.FindObjectOfType(typeof(Camera)) as Camera;
-                    if (cam != null) mListener = cam.GetComponent<AudioListener>();  //mListener = cam.gameObject.AddComponent<AudioListener>();
+                    if (cam != null) mListener = cam.GetComponent<AudioListener>();
+                    //{
+                    //    cam.gameObject.AddComponent<AudioListener>();
+                    //    mListener = cam.GetComponent<AudioListener>(); //cam.gameObject.AddComponent<AudioListener>();
+                    //}
                 }
             }
 

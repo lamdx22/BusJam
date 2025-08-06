@@ -503,7 +503,6 @@ namespace SkyJam
             Xe newXe = null;
             int newGhe = 0;
 
-            Debug.Log("Shink");
 
             ColorManInQueue tang2RemoveManInqueue = new ColorManInQueue { Color = ColorEnum.None, Num = 0 };
             ColorManInQueue removeManInQueue = new ColorManInQueue { Color = xeVisual.Color, Num = Mathf.Max(0, xeVisual.NumGhe - listPassengers.Count) };

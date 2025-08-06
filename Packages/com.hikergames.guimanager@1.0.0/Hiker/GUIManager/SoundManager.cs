@@ -67,7 +67,7 @@ namespace Hiker.GUI
                 {
                     if (musicSource.isPlaying == false || musicSource.volume <= 0f)
                     {
-                        StartMainMusic();
+                        //StartMainMusic();
                     }
                 }
             }
@@ -195,7 +195,10 @@ namespace Hiker.GUI
 
             if (clip != null)
             {
-                NGUITools.PlaySound(clip, vol);
+                //NGUITools.PlaySound(clip, vol);
+                AudioSource source = gameObject.AddComponent<AudioSource>();
+                source.clip = clip;
+                source.PlayOneShot(clip);
 
                 if (sfxCooldown.ContainsKey(clip))
                 {

@@ -1,3 +1,4 @@
+using DG.Tweening;
 using Hiker.GUI;
 using System.Collections;
 using System.Collections.Generic;

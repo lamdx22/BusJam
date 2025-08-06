@@ -104,6 +104,7 @@ public partial class GameManager : MonoBehaviour
         curLvl++;
         if (curLvl >= levels.Length)
         {
+            SoundManager.instance.StartFadeOutMusic();
             popupWin.Show(0);
             return false;
         }

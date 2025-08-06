@@ -136,10 +136,9 @@
             ],
             "includes": [
                 "Assets/Resources/DOTweenSettings.asset",
-                "Assets/SkyJam/2D/",
-                "Assets/SkyJam/2D_GUI/",
-                "Assets/SkyJam/Levels/",
-                "Assets/SkyJam/Materials/",
+                "Assets/SkyJam/Levels/L1.prefab",
+                "Assets/SkyJam/Levels/L2.prefab",
+                "Assets/SkyJam/Music/main.mp3",
                 "Assets/TextMesh Pro/Resources/TMP Settings.asset"
             ]
         },
@@ -1995,10 +1994,6 @@
             },
             {
                 "name": "UnityEngine.TooltipAttribute",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.U2D.SpriteAtlas",
                 "excluded": true
             },
             {
@@ -6642,10 +6637,6 @@
                 "excluded": true
             },
             {
-                "name": "DG.Tweening.Core.SequenceCallback",
-                "excluded": true
-            },
-            {
                 "name": "DG.Tweening.DOTweenPath",
                 "excluded": true
             },
@@ -6855,10 +6846,6 @@
             },
             {
                 "name": "DG.Tweening.DOTweenModulePhysics",
-                "excluded": true
-            },
-            {
-                "name": "DG.Tweening.DOTweenModuleSprite",
                 "excluded": true
             },
             {
@@ -22891,7 +22878,7 @@
                     },
                     {
                         "name": "color#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "color#set",
@@ -30355,7 +30342,7 @@
                     },
                     {
                         "name": "AddActiveTweenToSequence",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DespawnAll",
@@ -30419,7 +30406,7 @@
                     },
                     {
                         "name": "Goto",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Pause",
@@ -31007,11 +30994,11 @@
                     },
                     {
                         "name": "SetLoops",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetLoops$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetEase$2",
@@ -31107,7 +31094,7 @@
                     },
                     {
                         "name": "Append",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Prepend",
@@ -31131,7 +31118,7 @@
                     },
                     {
                         "name": "AppendCallback",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PrependCallback",
@@ -32635,7 +32622,7 @@
                 "instanceMethods": [
                     {
                         "name": "Instance#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ClearScreen",
@@ -32701,11 +32688,11 @@
                     },
                     {
                         "name": "StartMainMusic",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "StartFadeOutMusic",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "StartBattleMusic",
@@ -32717,11 +32704,11 @@
                     },
                     {
                         "name": "FadeOutMusic",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "FadeInMain",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PlaySound$1",
@@ -41455,7 +41442,7 @@
                     },
                     {
                         "name": "DoInsert",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "DoAppendInterval",
@@ -41467,7 +41454,7 @@
                     },
                     {
                         "name": "DoInsertCallback",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "init",
@@ -46793,19 +46780,19 @@
                     },
                     {
                         "name": "Play$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PlayForward",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "PlayReverse",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ResetToBeginning",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Toggle",
@@ -49506,6 +49493,92 @@
                     {
                         "name": "Clear",
                         "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.U2D.SpriteAtlas",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "spriteCount#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "CanBindTo",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetSprite",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetSprites",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetSprites$1",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "DG.Tweening.Core.SequenceCallback",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "DG.Tweening.DOTweenModuleSprite",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "DOColor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOFade",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DOGradientColor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "DOBlendableColor",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "HandTip",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "ButtonEffect",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Start",
+                        "excluded": false
                     }
                 ]
             }
