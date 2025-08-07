@@ -42,7 +42,7 @@ public class HandTip : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             isFirstTouch = true;
-            SoundManager.instance?.StartMainMusic();
+            //SoundManager.instance?.StartMainMusic();
         }
 
         if (isFirstTouch)

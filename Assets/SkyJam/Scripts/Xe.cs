@@ -65,6 +65,35 @@ namespace SkyJam
             UpdateLock(HaveTang2() ? -2.7f : -1.9f);
         }
 
+        //private void OnTriggerEnter2D(Collider2D collision)
+        //{
+        //    if (Application.isPlaying)
+        //    {
+        //        var hangdoi = collision.GetComponent<HangDoi>();
+        //        if (hangdoi != null)
+        //        {
+        //            if (hangdoi.ColorIdx >= 0 && (int)ActiveColor - 1 == hangdoi.ColorIdx)
+        //            {
+        //                Debug.Log("Xe mau: " + ((int)ActiveColor - 1) + " hangdoi mau:" + hangdoi.ColorIdx);
+        //                hangdoi.OnTriggerFromXe(this);
+        //            }
+        //            //hangdoi.OnTriggerFromXe(this);
+        //        }
+        //    }
+        //}
+
+        //private void OnTriggerExit2D(Collider2D collision)
+        //{
+        //    if (Application.isPlaying)
+        //    {
+        //        var hangdoi = collision.GetComponent<HangDoi>();
+        //        if (hangdoi != null)
+        //        {
+        //            hangdoi.OnExitFromXe();
+        //        }
+        //    }
+        //}
+
         public bool OnMoveXe()
         {
             for (int i = 0; i < hieuUng.Length; ++i)
@@ -131,6 +160,7 @@ namespace SkyJam
             if (IsGetOut == false)
             {
                 OnXeOut();
+                //hangdoi.OnExitFromXe();
             }
 
             return false;
@@ -142,6 +172,7 @@ namespace SkyJam
             if (xeVisual.IsFull && IsGetOut == false)
             {
                 OnXeOut();
+                //hangdoi.OnExitFromXe();
             }
         }
 
@@ -494,7 +525,7 @@ namespace SkyJam
             gameObject.SetActive(false);
 
             string replaceXe = XeNho;
-            var listPassengers = new List<Man>();// Hiker.Util.ListPool<Man>.Claim();
+            var listPassengers = Hiker.Util.ListPool<Man>.Claim();
 
             var num = xeVisual.GetPassengers(listPassengers);
             var pos = transform.position;
@@ -515,7 +546,7 @@ namespace SkyJam
                     if (h.extType == XeExtType.Tang2)
                     {
                         var tang2 = h as Tang2Eff;
-                        var listPassengers2 = new List<Man>();// Hiker.Util.ListPool<Man>.Claim();
+                        var listPassengers2 = Hiker.Util.ListPool<Man>.Claim();
                         var num2 = tang2.visual.GetPassengers(listPassengers2);
                         
                         int removeMan = tang2.visual.NumGhe;
@@ -528,7 +559,7 @@ namespace SkyJam
                         {
                             tang2RemoveManInqueue = new ColorManInQueue { Color = tang2.visual.Color, Num = removeMan };
                         }
-                        //Hiker.Util.ListPool<Man>.Release(listPassengers2);
+                        Hiker.Util.ListPool<Man>.Release(listPassengers2);
                     }
                 }
             }
@@ -559,7 +590,7 @@ namespace SkyJam
                                     if (h.extType == XeExtType.Tang2)
                                     {
                                         var tang2 = h as Tang2Eff;
-                                        var listPassengers2 = new List<Man>();// Hiker.Util.ListPool<Man>.Claim();
+                                        var listPassengers2 = Hiker.Util.ListPool<Man>.Claim();
                                         var num2 = tang2.visual.GetPassengers(listPassengers2);
 
                                         newTang2 = h2 as Tang2Eff;
@@ -576,7 +607,7 @@ namespace SkyJam
                                             tang2RemoveManInqueue = new ColorManInQueue { Color = newTang2.visual.Color, Num = removeMan };
                                         }
 
-                                        //Hiker.Util.ListPool<Man>.Release(listPassengers2);
+                                        Hiker.Util.ListPool<Man>.Release(listPassengers2);
                                     }
                                 }
                             }
@@ -603,11 +634,11 @@ namespace SkyJam
                 }
             }
 
-            //Hiker.Util.ListPool<Man>.Release(listPassengers);
+            Hiker.Util.ListPool<Man>.Release(listPassengers);
 
             yield return null;
 
-            listPassengers = new List<Man>();// Hiker.Util.ListPool<Man>.Claim();
+            listPassengers = Hiker.Util.ListPool<Man>.Claim();
 
             if (tang2RemoveManInqueue.Color > ColorEnum.None && tang2RemoveManInqueue.Num > 0 && LevelManager.instance != null)
             {
@@ -633,7 +664,7 @@ namespace SkyJam
                 yield return null;
             }
 
-            //Hiker.Util.ListPool<Man>.Release(listPassengers);
+            Hiker.Util.ListPool<Man>.Release(listPassengers);
 
             getOut = true;
 
@@ -660,7 +691,7 @@ namespace SkyJam
 
             int trigPop = 0;
 
-            var listPassengers = new List<Man>(); // Hiker.Util.ListPool<Man>.Claim();
+            var listPassengers = Hiker.Util.ListPool<Man>.Claim();
             for (int i = 0; i < hieuUng.Length; ++i)
             {
                 var h = hieuUng[i];

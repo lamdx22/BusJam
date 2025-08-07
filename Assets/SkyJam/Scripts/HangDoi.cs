@@ -1,7 +1,8 @@
-using Dreamteck.Splines;
+﻿using Dreamteck.Splines;
 using Hiker.GUI;
 using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.ConstrainedExecution;
 using TMPro;
 using UnityEngine;
 
@@ -13,6 +14,10 @@ namespace SkyJam
         [SerializeField] SpriteRenderer[] indicators;
         [SerializeField] TMP_Text lbNum;
         public KhoaObjVisual khoaObj;
+
+        [SerializeField] private LayerMask xeLayer;
+
+        private Collider2D triggerCollider;
 
         public QueueDirection dir;
         public ColorEnum mauKhoa = ColorEnum.None;
@@ -66,6 +71,8 @@ namespace SkyJam
             {
                 listMans = new RSQueue<Man>(GetComponentsInChildren<Man>());
             }
+
+            triggerCollider = GetComponent<Collider2D>();
         }
 
         private void OnEnable()
@@ -76,7 +83,8 @@ namespace SkyJam
             }
         }
 
-        private void OnTriggerStay2D(Collider2D collision)
+
+        private void OnTriggerEnter2D(Collider2D collision)
         {
             if (Application.isPlaying)
             {
@@ -88,6 +96,7 @@ namespace SkyJam
                         if (curXe != xe)
                         {
                             trigInterval = 0.1f;
+                            //curTrigInterval = 0.1f;
                             curXe = xe;
                             triggPop = 0;
                         }
@@ -105,12 +114,34 @@ namespace SkyJam
                     var xe = collision.attachedRigidbody.GetComponent<Xe>();
                     if (xe != null && curXe == xe)
                     {
-                        curXe = null;
+                        //curXe = null;
                         //trigInterval = 0.1f;
                     }
                 }
             }
         }
+
+
+        //public void OnTriggerFromXe(Xe xe)
+        //{
+        //    if (curXe != xe)
+        //    {
+        //        trigInterval = 0.1f;
+        //        curTrigInterval = 0.1f;
+        //        curXe = xe;
+        //        triggPop = 0;
+        //    }
+        //}
+
+        //public void OnExitFromXe()
+        //{
+        //    curXe = null;
+        //    if (xe != null && curXe == xe)
+        //    {
+        //        //Debug.Log("Exit2d");
+        //        curXe = null;
+        //    }
+        //}
 
         public void Unlock()
         {
@@ -180,6 +211,11 @@ namespace SkyJam
         // Update is called once per frame
         void Update()
         {
+            
+        }
+
+        private void LateUpdate()
+        {
             if (curXe != null)
             {
                 if (curTrigInterval > 0f)
@@ -193,6 +229,8 @@ namespace SkyJam
                     OnTriggXe(curXe);
                 }
             }
+
+
         }
 
         public void UpdateManPosInQueue()

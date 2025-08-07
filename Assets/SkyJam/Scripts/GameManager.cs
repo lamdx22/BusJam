@@ -96,6 +96,8 @@ public partial class GameManager : MonoBehaviour
         var curLvl = PInfo.Level;
 
         popupLoadLevel.LoadLevel(levels[curLvl], levelNums[curLvl], false);
+
+        SoundManager.instance?.StartMainMusic();
     }
 
     public bool LoadNextLevel()
@@ -119,7 +121,7 @@ public partial class GameManager : MonoBehaviour
     public void OnLose()
     {
         var curLvl = PInfo.Level;
-
+        SoundManager.instance.StartFadeOutMusic();
         popupLose.Show();
     }
 

@@ -1,8 +1,8 @@
 {
     "version": "6.3.0",
     "projectId": "3f7c89647224b7448946645f95d33821",
-    "applicationID": 0,
-    "creativeName": "",
+    "applicationID": 31279,
+    "creativeName": "250807_LamDX_ColorBusJam_test2",
     "pgServer": "EU",
     "window": {
         "‐″": true
@@ -1502,10 +1502,6 @@
             },
             {
                 "name": "UnityEngine.ConeLimitHelper",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.ContactFilter2D",
                 "excluded": true
             },
             {
@@ -7066,10 +7062,6 @@
             },
             {
                 "name": "Hiker.UnityMainThreadDispatcher",
-                "excluded": true
-            },
-            {
-                "name": "SkyJam.BorderVisual",
                 "excluded": true
             },
             {
@@ -20906,7 +20898,7 @@
                     },
                     {
                         "name": "Get9SlicedMesh",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Get9TiledMesh",
@@ -22902,7 +22894,7 @@
                     },
                     {
                         "name": "size#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "size#set",
@@ -36128,7 +36120,7 @@
                     },
                     {
                         "name": "OverlapCollider",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetContacts$2",
@@ -39337,14 +39329,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "OnTriggerStay2D",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnTriggerExit2D",
-                        "excluded": false
-                    },
-                    {
                         "name": "Unlock",
                         "excluded": true
                     },
@@ -39374,6 +39358,18 @@
                     },
                     {
                         "name": "RemoveManFromQueue",
+                        "excluded": false
+                    },
+                    {
+                        "name": "LateUpdate",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnTriggerEnter2D",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnTriggerExit2D",
                         "excluded": false
                     }
                 ]
@@ -49573,12 +49569,98 @@
                 ]
             },
             {
-                "className": "ButtonEffect",
+                "className": "UnityEngine.ContactFilter2D",
                 "staticMethods": [],
                 "instanceMethods": [
                     {
-                        "name": "Start",
+                        "name": "init",
                         "excluded": false
+                    },
+                    {
+                        "name": "getDefaultValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "isFiltering#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "NoFilter",
+                        "excluded": true
+                    },
+                    {
+                        "name": "CheckConsistency",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ClearLayerMask",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetLayerMask",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ClearDepth",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetDepth",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ClearNormalAngle",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetNormalAngle",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsFilteringTrigger",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsFilteringLayerMask",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsFilteringDepth",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsFilteringNormalAngle$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "IsFilteringNormalAngle",
+                        "excluded": true
+                    },
+                    {
+                        "name": "getHashCode",
+                        "excluded": true
+                    },
+                    {
+                        "name": "equals",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$clone",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "SkyJam.BorderVisual",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Update",
+                        "excluded": true
                     }
                 ]
             }
