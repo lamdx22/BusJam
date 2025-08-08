@@ -1,4 +1,4 @@
-using DG.Tweening;
+﻿using DG.Tweening;
 using Hiker.GUI;
 using Hiker.Util;
 using System.Collections;
@@ -31,6 +31,9 @@ namespace SkyJam
         private float levelTime = 0f;
         private float limitTime = 0f;
         private float freezeTime = 0f;
+
+        private int maxMove = 0;
+        private int moveCount = 0;
 
         private int turnReviveAd = 0;
         string lvlName = string.Empty;
@@ -305,6 +308,8 @@ namespace SkyJam
             timePlayed = 0f;
             levelTime = 0f;
             freezeTime = 0f;
+            maxMove = board.maxMove;
+            moveCount = 0;
 
             if (board != null)
             {
@@ -328,6 +333,69 @@ namespace SkyJam
             }
 
             Hiker.HikerLog.LogEditorOnly("Level Unload", "Level", "yellow");
+        }
+
+        public void OnCompleteMove()
+        {
+            if (maxMove <= 0) return;
+           
+            moveCount++;
+            if (moveCount >= maxMove)
+            {
+                StartCoroutine(DelayedCheckFailAfterTapCountReached());
+            }
+        }
+
+        private IEnumerator DelayedCheckFailAfterTapCountReached()
+        {
+            yield return new WaitForSecondsRealtime(0.5f);
+
+            if (state == LevelStatus.Started)
+            {
+                if (GetRemainPassengerOnBoard() > 0)
+                {
+                    OnReachMaxMove(); // Xử lý thất bại
+                }
+                else
+                {
+                    OnLevelComplete(); // Xử lý thắng
+                }
+            }
+        }
+
+        public int GetRemainPassengerOnBoard()
+        {
+            int totalRemain = 0;
+
+            for (int i = 0; i < board.queues.childCount; i++)
+            {
+                Transform child = board.queues.GetChild(i);
+                HangDoi hangDoi = child.GetComponent<HangDoi>();
+
+                if (hangDoi == null)
+                {
+                    //Debug.LogError("HangDoi not found on child: " + child.name);
+                    continue;
+                }
+
+                totalRemain += hangDoi.RemainMan;
+            }
+
+            return totalRemain;
+        }
+
+        private void OnReachMaxMove()
+        {
+            if (state == LevelStatus.Started)
+            {
+                state = LevelStatus.TimeOut;
+                Hiker.HikerLog.LogEditorOnly("Reach Level Max Move", "LEVEL", "yellow");
+
+                HikerUtils.DoAction(this, () =>
+                {
+                    GameManager.instance.OnReachMaxMove();
+                }, 0.5f, true);
+            }
         }
 
         private void OnEnable()
@@ -1193,6 +1261,7 @@ namespace SkyJam
             if (state > LevelStatus.Inited && state < LevelStatus.Ended && board != null)
             {
                 veh.OnHaveXeGetOut(veh);
+                GameManager.instance.OnCompleteXe();
 
                 bool isCompleteBus = true;
                 for (int i = 0; i < board.vehicles.childCount; ++i)

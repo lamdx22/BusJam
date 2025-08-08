@@ -2383,6 +2383,7 @@ MonoBehaviour:
   - {fileID: 4231764142993000626}
   queues: {fileID: 4232263316415437506}
   vehicles: {fileID: 5122518098932568224}
+  maxMove: 20
   thoiGian: 120
 --- !u!1 &3347202554028372200
 GameObject:
@@ -7004,7 +7005,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8366152819601012596, guid: 114d4fa785a7c0843879f8c08fd11032, type: 3}
       propertyPath: ColorMan.Array.data[0].Color
-      value: 11
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7026,7 +7027,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 56478758015300166, guid: edb96d195aee2984f91bb40b8383fed8, type: 3}
       propertyPath: Color
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 2864360247665425984, guid: edb96d195aee2984f91bb40b8383fed8, type: 3}
       propertyPath: m_Name
@@ -7422,11 +7423,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3748187366986248670, guid: 1fbfe4db356b86549b4af91d444bf577, type: 3}
       propertyPath: ColorMan.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3748187366986248670, guid: 1fbfe4db356b86549b4af91d444bf577, type: 3}
       propertyPath: ColorMan.Array.data[0].Num
-      value: 12
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3748187366986248670, guid: 1fbfe4db356b86549b4af91d444bf577, type: 3}
       propertyPath: ColorMan.Array.data[1].Num
@@ -7434,7 +7435,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3748187366986248670, guid: 1fbfe4db356b86549b4af91d444bf577, type: 3}
       propertyPath: ColorMan.Array.data[0].Color
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3748187366986248670, guid: 1fbfe4db356b86549b4af91d444bf577, type: 3}
       propertyPath: ColorMan.Array.data[1].Color
@@ -7792,7 +7793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4760251249462088545, guid: ce72c635070fbcf469c861ef4803b7de, type: 3}
       propertyPath: ColorMan.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4760251249462088545, guid: ce72c635070fbcf469c861ef4803b7de, type: 3}
       propertyPath: ColorMan.Array.data[0].Num
@@ -7803,12 +7804,20 @@ PrefabInstance:
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4760251249462088545, guid: ce72c635070fbcf469c861ef4803b7de, type: 3}
+      propertyPath: ColorMan.Array.data[2].Num
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760251249462088545, guid: ce72c635070fbcf469c861ef4803b7de, type: 3}
       propertyPath: ColorMan.Array.data[0].Color
-      value: 1
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4760251249462088545, guid: ce72c635070fbcf469c861ef4803b7de, type: 3}
       propertyPath: ColorMan.Array.data[1].Color
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4760251249462088545, guid: ce72c635070fbcf469c861ef4803b7de, type: 3}
+      propertyPath: ColorMan.Array.data[2].Color
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6508668654408226085, guid: ce72c635070fbcf469c861ef4803b7de, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8322,15 +8331,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4990895288917945008, guid: 72bb47dbc4ac856458f12a5b8172f8dd, type: 3}
       propertyPath: ColorMan.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4990895288917945008, guid: 72bb47dbc4ac856458f12a5b8172f8dd, type: 3}
       propertyPath: ColorMan.Array.data[0].Num
-      value: 20
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990895288917945008, guid: 72bb47dbc4ac856458f12a5b8172f8dd, type: 3}
+      propertyPath: ColorMan.Array.data[1].Num
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4990895288917945008, guid: 72bb47dbc4ac856458f12a5b8172f8dd, type: 3}
       propertyPath: ColorMan.Array.data[0].Color
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4990895288917945008, guid: 72bb47dbc4ac856458f12a5b8172f8dd, type: 3}
+      propertyPath: ColorMan.Array.data[1].Color
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6670569123814716794, guid: 72bb47dbc4ac856458f12a5b8172f8dd, type: 3}
       propertyPath: m_Size.y

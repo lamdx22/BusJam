@@ -20,6 +20,8 @@ namespace SkyJam
         public Transform queues;
         public Transform vehicles;
 
+        public int maxMove = 0;
+
         [SerializeField] int thoiGian = 60;
 
         public int LevelTime { get { return thoiGian; } set { thoiGian = value; } }

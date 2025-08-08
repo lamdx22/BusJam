@@ -234,6 +234,8 @@ namespace SkyJam
             if (isNhacLen == false) return;
             base.OnHaXeXuong();
 
+            LevelManager.instance.OnCompleteMove();
+
             isNhacLen = false;
 
             for (int i = 0; i < hieuUng.Length; ++i)

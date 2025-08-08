@@ -7,20 +7,22 @@ namespace SkyJam
 {
     public class PopupThua : MonoBehaviour
     {
-        [SerializeField]
-        AudioClip loseClip;
         public void Show()
         {
             gameObject.SetActive(true);
-            if (loseClip != null)
-            {
-                SoundManager.instance?.PlaySound(loseClip, 1f);
-            }
         }
 
         public void OnUserTapToStore()
         {
             GameManager.instance.GoToStore();
+        }
+
+        void Update()
+        {
+            if (Input.GetMouseButtonDown(0) || Input.touchCount > 0)
+            {
+                GameManager.instance.GoToStore();
+            }
         }
     }
 }

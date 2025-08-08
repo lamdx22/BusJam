@@ -6701,7 +6701,7 @@ MonoBehaviour:
   - {fileID: 7386087068027801656}
   queues: {fileID: 6564379063593899220}
   vehicles: {fileID: 7172009113285047462}
-  thoiGian: 300
+  thoiGian: 20
 --- !u!1 &5169894960509364350
 GameObject:
   m_ObjectHideFlags: 0

@@ -11,6 +11,8 @@ namespace Hiker.GUI
 
         public AudioSource musicSource;
         public AudioClip mainClip;
+        public AudioClip loseClip;
+        public AudioClip winClip;
         public AudioClip battleClip;
         public bool MusicEnable = true;
         public bool SoundEnable = true;
@@ -179,6 +181,16 @@ namespace Hiker.GUI
                 PlaySound(clip);
             }
             return clip;
+        }
+
+        public void PlaySoundWin()
+        {
+            if (winClip != null) PlaySound(winClip);
+        }
+
+        public void PlaySoundLose()
+        {
+            if (loseClip != null) PlaySound(loseClip);
         }
 
         public void PlaySound(AudioClip clip, float vol = 1f)

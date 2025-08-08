@@ -2,7 +2,7 @@
     "version": "6.3.0",
     "projectId": "3f7c89647224b7448946645f95d33821",
     "applicationID": 31279,
-    "creativeName": "250807_LamDX_ColorBusJam_test2",
+    "creativeName": "250808_LamDX_ColorBusJam_test4",
     "pgServer": "EU",
     "window": {
         "‐″": true
@@ -78,7 +78,6 @@
             "msbuildMac64": "/Library/Frameworks/Mono.framework/Versions/Current/bin/msbuild",
             "msbuildWin64": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\MSBuild.exe",
             "externalSources": [
-                ".\\Stubs",
                 "D:/Projects/Unity/hiker-color-bus-jam-2/Packages/com.hikergames.hikerutils@1.0.0",
                 "D:/Projects/Unity/hiker-color-bus-jam-2/Packages/com.hikergames.logs@1.0.0",
                 "D:/Projects/Unity/hiker-color-bus-jam-2/Packages/com.hikergames.mempool@1.0.0",
@@ -97,6 +96,77 @@
                 "resources"
             ],
             "excludes": [
+                "Assets/Dreamteck/",
+                "Assets/InteractiveEndCardBuilder/",
+                "Assets/JMO Assets/Cartoon FX Remaster/CFXR Assets/Graphics/cfxr fire circle drawn.png",
+                "Assets/Shootero/",
+                "Assets/Shootero/ArtOther/HH_Rock4_dif.png",
+                "Assets/Shootero/ArtOther/HH_Rock5_dif.png",
+                "Assets/Shootero/ArtOther/rock4c.mat",
+                "Assets/Shootero/ArtOther/rock5.mat",
+                "Assets/Shootero/ArtOther/Rock_4_C.fbx",
+                "Assets/SkyJam/2D/Tilemap/Tiles/",
+                "Assets/SkyJam/2D_GUI/Icons/BO_DongHo.png",
+                "Assets/SkyJam/2D_GUI/Icons/BO_ThienThach.png",
+                "Assets/SkyJam/2D_GUI/Icons/btn_close.png",
+                "Assets/SkyJam/2D_GUI/Icons/btn_setting.png",
+                "Assets/SkyJam/2D_GUI/Icons/icon_check.png",
+                "Assets/SkyJam/2D_GUI/Icons/icon_coin.png",
+                "Assets/SkyJam/2D_GUI/Icons/icon_dislike.png",
+                "Assets/SkyJam/2D_GUI/Icons/icon_heart.png",
+                "Assets/SkyJam/2D_GUI/Icons/icon_like.png",
+                "Assets/SkyJam/2D_GUI/Icons/icon_lock.png",
+                "Assets/SkyJam/2D_GUI/Icons/icon_Lock2.png",
+                "Assets/SkyJam/2D_GUI/Icons/icon_time1.png",
+                "Assets/SkyJam/2D_GUI/Icons/icon_unlimit.png",
+                "Assets/SkyJam/2D_GUI/Icons/icon_unlimit_green.png",
+                "Assets/SkyJam/2D_GUI/Icons/ico_info_building.png",
+                "Assets/SkyJam/2D_GUI/Icons/Noti.png",
+                "Assets/SkyJam/2D_GUI/Icons/Noti_2.png",
+                "Assets/SkyJam/2D_GUI/Icons/POW_Wrench_anim.png",
+                "Assets/SkyJam/2D_GUI/Icons/PO_Bang.png",
+                "Assets/SkyJam/2D_GUI/Icons/PO_Bua.png",
+                "Assets/SkyJam/2D_GUI/Icons/PO_Cua.png",
+                "Assets/SkyJam/2D_GUI/Icons/PO_Hut.png",
+                "Assets/SkyJam/2D_GUI/Icons/Rectangle 3 copy 6.png",
+                "Assets/SkyJam/2D_GUI/Icons/Rectangle 3 Light.png",
+                "Assets/SkyJam/2D_GUI/Icons/remove_banner2.png",
+                "Assets/SkyJam/2D_GUI/Icons/winstreak star.png",
+                "Assets/SkyJam/2D_GUI/Icons/winstreak star1.png",
+                "Assets/SkyJam/2D_GUI/Icons/winstreak star2.png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/Gold.png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/Haptic_Off.Png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/Heart.png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/HeartUnlimit.png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/icon_video_ads.png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/icon_video_ads_center_mask.png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/icon_video_ads_side_mask.png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/Music.png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/Music_Off.Png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/Pictoicon_Haptic.Png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/Sound Off.png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/Sound On.png",
+                "Assets/SkyJam/2D_GUI/NoAtlas/VideoAd.png",
+                "Assets/SkyJam/Music/battle.mp3",
+                "Assets/SkyJam/Resources/Prefabs/Stones/",
+                "Assets/SkyJam/Resources/SFX/battle_pu_bua.wav",
+                "Assets/SkyJam/Resources/SFX/battle_pu_cua.wav",
+                "Assets/SkyJam/Resources/SFX/battle_pu_freeze_start.wav",
+                "Assets/SkyJam/Resources/SFX/battle_pu_hut.wav",
+                "Assets/SkyJam/Resources/SFX/BulletHitWall2.mp3",
+                "Assets/SkyJam/Resources/SFX/chest_unlock.mp3",
+                "Assets/SkyJam/Resources/SFX/meteor_impact.wav",
+                "Assets/SkyJam/Resources/SFX/meteor_start.wav",
+                "Assets/SkyJam/Resources/Sprite Assets/Gold.asset",
+                "Assets/SkyJam/Resources/Sprite Assets/Heart.asset",
+                "Assets/SkyJam/Resources/Sprite Assets/VideoAd.asset",
+                "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+                "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+                "Assets/TextMesh Pro/Sprites/EmojiOne.png",
+                "Assets/VFX/Materials/IceFilter.png",
+                "Assets/VFX/Materials/IcyTexture.png",
+                "Assets/VFX/Materials/SnowflakeGlow.png",
+                "Assets/VFX/Snowflake_FX.prefab",
                 "**/Editor/",
                 "**/FacebookSDK/",
                 "**/googleads**/",
@@ -132,13 +202,27 @@
                 "Stubs/AppsFlyer",
                 "Stubs/IronSource",
                 "Stubs/Vungle",
-                "Stubs/MoreMountains.NiceVibrations"
+                "Stubs/MoreMountains.NiceVibrations",
+                "Assets/SkyJam/3D/woodenbox_3.fbx",
+                "Assets/SkyJam/3D/woodenbox_2.fbx",
+                "Assets/SkyJam/3D/woodenbox_1.fbx",
+                "Assets/SkyJam/3D/PowerUps/POW_magnet.fbx",
+                "Assets/SkyJam/3D/PowerUps/POW_magnet.fbx",
+                "Assets/XoanDay/Meshes/Khoa_fbx.fbx",
+                "Assets/XoanDay/Meshes/Khoa_fbx.fbx",
+                "Assets/SkyJam/3D/Wooden_cube.png",
+                "Assets/SkyJam/3D/ice.png",
+                "Assets/XoanDay/Meshes/NN_Key2_dif.png",
+                "Assets/SkyJam/3D/PowerUps/ITEM_POW_Freeze.png",
+                "Assets/XoanDay/Meshes/NN_Key_Lock_dif.png",
+                "Assets/SkyJam/Prefabs/GUI/Items/PowUpBtn.prefab"
             ],
             "includes": [
                 "Assets/Resources/DOTweenSettings.asset",
-                "Assets/SkyJam/Levels/L1.prefab",
-                "Assets/SkyJam/Levels/L2.prefab",
+                "Assets/SkyJam/Levels/L3.prefab",
+                "Assets/SkyJam/Levels/L6.prefab",
                 "Assets/SkyJam/Music/main.mp3",
+                "Assets/SkyJam/Resources/Prefabs/",
                 "Assets/TextMesh Pro/Resources/TMP Settings.asset"
             ]
         },
@@ -489,10 +573,6 @@
                 "excluded": true
             },
             {
-                "name": "System.ArgumentNullException",
-                "excluded": true
-            },
-            {
                 "name": "System.ArithmeticException",
                 "excluded": true
             },
@@ -674,10 +754,6 @@
             },
             {
                 "name": "System.RankException",
-                "excluded": true
-            },
-            {
-                "name": "System.SR",
                 "excluded": true
             },
             {
@@ -2662,7 +2738,7 @@
             },
             {
                 "name": "LunaUnity.Objects.Registry.ItemNotFoundException",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "NotificationsPermissionResponse",
@@ -6801,18 +6877,6 @@
                 "excluded": true
             },
             {
-                "name": "CartoonFX.CFXR_Effect",
-                "excluded": true
-            },
-            {
-                "name": "CartoonFX.CFXR_Effect.AnimatedLight",
-                "excluded": true
-            },
-            {
-                "name": "CartoonFX.CFXR_Effect.CameraShake",
-                "excluded": true
-            },
-            {
                 "name": "DG.Tweening.DOTweenCYInstruction.WaitForCompletion",
                 "excluded": true
             },
@@ -7590,14 +7654,6 @@
             },
             {
                 "name": "Spine.PhysicsConstraintWindTimeline",
-                "excluded": true
-            },
-            {
-                "name": "CartoonFX.CFXR_Effect.CameraShake.ShakeSpace",
-                "excluded": true
-            },
-            {
-                "name": "CartoonFX.CFXR_Effect.ClearBehavior",
                 "excluded": true
             },
             {
@@ -9443,6 +9499,26 @@
             {
                 "name": "UITweener.Style",
                 "excluded": false
+            },
+            {
+                "name": "CartoonFX.CFXR_Effect",
+                "excluded": true
+            },
+            {
+                "name": "CartoonFX.CFXR_Effect.AnimatedLight",
+                "excluded": true
+            },
+            {
+                "name": "CartoonFX.CFXR_Effect.CameraShake",
+                "excluded": true
+            },
+            {
+                "name": "CartoonFX.CFXR_Effect.CameraShake.ShakeSpace",
+                "excluded": true
+            },
+            {
+                "name": "CartoonFX.CFXR_Effect.ClearBehavior",
+                "excluded": true
             }
         ],
         "unusedMethods": [
@@ -32605,6 +32681,14 @@
                     {
                         "name": "OnUsePowerUp",
                         "excluded": true
+                    },
+                    {
+                        "name": "OnCompleteXe",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnReachMaxMove",
+                        "excluded": false
                     }
                 ]
             },
@@ -32720,6 +32804,14 @@
                     },
                     {
                         "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PlaySoundWin",
+                        "excluded": true
+                    },
+                    {
+                        "name": "PlaySoundLose",
                         "excluded": false
                     }
                 ]
@@ -33263,6 +33355,22 @@
                     {
                         "name": "DoUnlockKhoa",
                         "excluded": true
+                    },
+                    {
+                        "name": "OnCompleteMove",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DelayedCheckFailAfterTapCountReached",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetRemainPassengerOnBoard",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnReachMaxMove",
+                        "excluded": false
                     }
                 ]
             },
@@ -33277,6 +33385,10 @@
                     {
                         "name": "OnUserTapToStore",
                         "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": true
                     }
                 ]
             },
@@ -33290,6 +33402,10 @@
                     },
                     {
                         "name": "OnUserTapToStore",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
                         "excluded": false
                     }
                 ]
@@ -38468,7 +38584,7 @@
                     },
                     {
                         "name": "RebuildUsers",
-                        "excluded": false
+                        "excluded": true
                     },
                     {
                         "name": "SetAllDirty",
@@ -49663,6 +49779,96 @@
                         "excluded": true
                     }
                 ]
+            },
+            {
+                "className": "IQBarController",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ResetIQ",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Increase",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "System.ArgumentNullException",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$ctor1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "$ctor2",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$ctor3",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "System.SR",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "UsingResourceKeys",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetResourceString",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetResourceString$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "InternalGetResourceString",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Format$3",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Format",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Format$1",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Format$2",
+                        "excluded": true
+                    }
+                ]
             }
         ],
         "stubberDataList": [],
@@ -49746,13 +49952,84 @@
                 "default": {
                     "channels": 1,
                     "startTime": "00:00.000",
-                    "endTime": "00:00.000",
-                    "lengthInSeconds": 0.0,
+                    "endTime": "00:30.000",
+                    "lengthInSeconds": 30.0,
                     "bitrate": 128,
                     "script": "",
                     "ext": ""
                 },
-                "overrides": []
+                "overrides": [
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:00.000",
+                        "lengthInSeconds": 0.0,
+                        "bitrate": 32,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/SkyJam/Resources/SFX/battle_pu_freeze_start.wav"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
+                        "bitrate": 32,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/SkyJam/Resources/SFX/battle_booster_clock.wav"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "03:04.612",
+                        "lengthInSeconds": 184.61199951171876,
+                        "bitrate": 32,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/SkyJam/Music/main.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 30.0,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/SkyJam/Sound/car_fly.wav"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 0.0,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/SkyJam/Sound/Button - High.wav"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 0.0,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/SkyJam/Sound/Button - Low.wav"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 0.0,
+                        "bitrate": 128,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/SkyJam/Sound/Jump2.wav"
+                    }
+                ]
             },
             "font": {
                 "default": {

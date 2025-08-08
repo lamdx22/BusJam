@@ -10,6 +10,7 @@ public partial class GameManager : MonoBehaviour
     public PopupLoadLevel popupLoadLevel;
     public PopupThang popupWin;
     public PopupThua popupLose;
+    public IQBarController iqBar;
 
     public string urlStore;
 
@@ -107,6 +108,7 @@ public partial class GameManager : MonoBehaviour
         if (curLvl >= levels.Length)
         {
             SoundManager.instance.StartFadeOutMusic();
+            SoundManager.instance.PlaySoundWin();
             popupWin.Show(0);
             return false;
         }
@@ -118,10 +120,21 @@ public partial class GameManager : MonoBehaviour
         }
     }
 
+    public void OnReachMaxMove()
+    {
+        popupLose.Show();
+    }
+
+    public void OnCompleteXe()
+    {
+        if (iqBar != null) iqBar.Increase(1);
+    }
+
     public void OnLose()
     {
         var curLvl = PInfo.Level;
         SoundManager.instance.StartFadeOutMusic();
+        SoundManager.instance.PlaySoundLose();
         popupLose.Show();
     }
 

@@ -180,6 +180,10 @@ namespace SkyJam
                         trigInterval = 0.02f;
                     }
                     OnDequeue();
+                    if (xe.xeVisual.IsFull)
+                    {
+                        curXe = null;
+                    }
                 }
             }
         }
