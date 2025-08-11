@@ -134,7 +134,8 @@ public class XeVisual : MonoBehaviour
 
         if (gameCfg != null && gameCfg.SFXNhay != null)
         {
-            SoundManager.instance?.PlaySound(gameCfg.SFXNhay.Length > c ? gameCfg.SFXNhay[c] : gameCfg.SFXNhay[gameCfg.SFXNhay.Length - 1], 1f);
+            //SoundManager.instance?.PlaySound(gameCfg.SFXNhay.Length > c ? gameCfg.SFXNhay[c] : gameCfg.SFXNhay[gameCfg.SFXNhay.Length - 1], 1f);
+            MySoundManager.Instance?.PlaySfxSound(gameCfg.SFXNhay.Length > c ? gameCfg.SFXNhay[c] : gameCfg.SFXNhay[gameCfg.SFXNhay.Length - 1], 1f);
         }
         HikerHaptic.instance?.PlayTapEffect();
 
@@ -183,7 +184,8 @@ public class XeVisual : MonoBehaviour
 
         if (sfxBay)
         {
-            SoundManager.instance?.PlaySound(sfxBay, 1f);
+            //SoundManager.instance?.PlaySound(sfxBay, 1f);
+            MySoundManager.Instance?.PlaySfxSound(sfxBay, 1f);
         }
 
         if (visual)

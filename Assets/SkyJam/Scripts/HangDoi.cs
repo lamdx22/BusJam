@@ -155,7 +155,7 @@ namespace SkyJam
                 khoaObj.gameObject.SetActive(false);
             }
 
-            SoundManager.instance?.PlaySound("SFX/chest_unlock");
+            //SoundManager.instance?.PlaySound("SFX/chest_unlock");
         }
 
         int triggPop = 0;
@@ -334,7 +334,7 @@ namespace SkyJam
                     for (int j = 0; j < c.Num; ++j)
                     {
                         var mObj = Instantiate(prefab, transform).GetComponent<Man>();
-                        mObj.gameObject.hideFlags = HideFlags.HideAndDontSave;
+                        //mObj.gameObject.hideFlags = HideFlags.HideAndDontSave;
                         //mObj.gameObject.hideFlags = HideFlags.None;
                         mObj.SetColor(c.Color);
 

@@ -262,14 +262,14 @@ namespace SkyJam
         {
             var bua = LevelManager.instance.SpawnSawVisual(touchPos);
             yield return new WaitForSecondsRealtime(0.4f);
-            SoundManager.instance?.PlaySound("SFX/BulletHitWall2");
+            //SoundManager.instance?.PlaySound("SFX/BulletHitWall2");
             yield return new WaitForSecondsRealtime(0.35f);
-            SoundManager.instance?.PlaySound("SFX/BulletHitWall2");
+            //SoundManager.instance?.PlaySound("SFX/BulletHitWall2");
             yield return new WaitForSecondsRealtime(0.35f);
-            SoundManager.instance?.PlaySound("SFX/BulletHitWall2");
+            //SoundManager.instance?.PlaySound("SFX/BulletHitWall2");
             yield return new WaitForSecondsRealtime(0.5f);
 
-            SoundManager.instance?.PlaySound("SFX/battle_pu_cua");
+            //SoundManager.instance?.PlaySound("SFX/battle_pu_cua");
             gameObject.SetActive(false);
 
             yield return null;

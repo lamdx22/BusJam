@@ -79,7 +79,7 @@ namespace SkyJam
             if (fxFrozen != null && fxFrozen.gameObject.activeSelf == false)
             {
                 fxFrozen.gameObject.SetActive(true);
-                SoundManager.instance?.PlaySound("SFX/battle_pu_freeze_start");
+                //SoundManager.instance?.PlaySound("SFX/battle_pu_freeze_start");
             }
 
             panelFrozenTime.gameObject.SetActive(true);
@@ -96,7 +96,7 @@ namespace SkyJam
             {
                 fxFrozen.gameObject.SetActive(false);
 
-                SoundManager.instance?.PlaySound("SFX/battle_pu_freeze_end");
+                //SoundManager.instance?.PlaySound("SFX/battle_pu_freeze_end");
 
                 panelFrozenTime.DOKill();
                 panelFrozenTime.DOFade(0f, 0.15f).SetUpdate(true).OnComplete(() =>

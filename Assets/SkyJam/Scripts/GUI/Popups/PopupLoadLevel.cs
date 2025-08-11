@@ -37,28 +37,5 @@ public class PopupLoadLevel : MonoBehaviour
         tween.PlayReverse();
         yield return new WaitForSecondsRealtime(0.5f);
         gameObject.SetActive(false);
-
-        //if (fadeIn)
-        //{
-        //    canvasGroup.alpha = 0f;
-        //    canvasGroup.DOFade(1f, 0.6f);
-        //}
-        //else
-        //{
-        //    canvasGroup.alpha = 1f;
-        //    canvasGroup.DOFade(0f, 0.1f);
-        //}
-
-        //yield return new WaitForSecondsRealtime(0.6f);
-
-        //if (LevelManager.instance)
-        //{
-        //    LevelManager.instance.SpawnLevel(prefab, lvlNum);
-        //    yield return new WaitUntil(() => LevelManager.instance.State >= LevelStatus.Inited);
-        //}
-
-        //canvasGroup.DOFade(0f, 0.5f);
-        //yield return new WaitForSecondsRealtime(0.5f);
-        //gameObject.SetActive(false);
     }
 }

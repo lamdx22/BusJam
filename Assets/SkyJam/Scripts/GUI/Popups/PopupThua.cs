@@ -7,22 +7,20 @@ namespace SkyJam
 {
     public class PopupThua : MonoBehaviour
     {
+        public AudioClip loseClip;
+
         public void Show()
         {
             gameObject.SetActive(true);
+            LunaManager.Instance.EndGame();
+            //Hiker.GUI.SoundManager.instance.PlaySoundLose();
+            MySoundManager.Instance.PlaySoundLose();
         }
 
-        public void OnUserTapToStore()
-        {
-            GameManager.instance.GoToStore();
-        }
+        //public void OnUserTapToStore()
+        //{
+        //    GameManager.instance.GoToStore();
+        //}
 
-        void Update()
-        {
-            if (Input.GetMouseButtonDown(0) || Input.touchCount > 0)
-            {
-                GameManager.instance.GoToStore();
-            }
-        }
     }
 }

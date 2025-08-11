@@ -1837,6 +1837,222 @@ MonoBehaviour:
     keywords:
     - DIRECTIONAL
   - shaderCompilerPlatform: 5
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords: []
+  - shaderCompilerPlatform: 9
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords: []
+  - shaderCompilerPlatform: 5
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _FADING_ON
+  - shaderCompilerPlatform: 9
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _FADING_ON
+  - shaderCompilerPlatform: 5
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _CFXR_DISSOLVE
+    - _FADING_ON
+  - shaderCompilerPlatform: 9
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _CFXR_DISSOLVE
+    - _FADING_ON
+  - shaderCompilerPlatform: 5
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _ALPHABLEND_ON
+    - _FADING_ON
+    - _
+  - shaderCompilerPlatform: 9
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _ALPHABLEND_ON
+    - _FADING_ON
+    - _
+  - shaderCompilerPlatform: 5
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _CFXR_DISSOLVE
+    - _FADING_ON
+    - _ALPHABLEND_ON
+    - _
+  - shaderCompilerPlatform: 9
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _CFXR_DISSOLVE
+    - _FADING_ON
+    - _ALPHABLEND_ON
+    - _
+  - shaderCompilerPlatform: 5
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _ALPHATEST_ON
+    - _CFXR_ADDITIVE
+    - _FADING_ON
+    - _
+  - shaderCompilerPlatform: 9
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _ALPHATEST_ON
+    - _CFXR_ADDITIVE
+    - _FADING_ON
+    - _
+  - shaderCompilerPlatform: 5
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _CFXR_DISSOLVE
+    - _FADING_ON
+    - _ALPHATEST_ON
+    - _CFXR_ADDITIVE
+    - _
+  - shaderCompilerPlatform: 9
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _CFXR_DISSOLVE
+    - _FADING_ON
+    - _ALPHATEST_ON
+    - _CFXR_ADDITIVE
+    - _
+  - shaderCompilerPlatform: 5
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _ALPHABLEND_ON
+    - _
+  - shaderCompilerPlatform: 9
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _ALPHABLEND_ON
+    - _
+  - shaderCompilerPlatform: 5
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _CFXR_ADDITIVE
+    - _FADING_ON
+    - _
+  - shaderCompilerPlatform: 9
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _CFXR_ADDITIVE
+    - _FADING_ON
+    - _
+  - shaderCompilerPlatform: 5
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _CFXR_DISSOLVE
+    - _FADING_ON
+    - _CFXR_ADDITIVE
+    - _
+  - shaderCompilerPlatform: 9
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _CFXR_DISSOLVE
+    - _FADING_ON
+    - _CFXR_ADDITIVE
+    - _
+  - shaderCompilerPlatform: 5
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _CFXR_ADDITIVE
+    - _CFXR_DISSOLVE
+    - _
+  - shaderCompilerPlatform: 9
+    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
+    passType: 4
+    passId: 0
+    subShaderIndex: 0
+    upToDate: 0
+    keywords:
+    - _CFXR_ADDITIVE
+    - _CFXR_DISSOLVE
+    - _
+  - shaderCompilerPlatform: 5
     shader: {fileID: 4800000, guid: cf81c85f95fe47e1a27f6ae460cf182c, type: 3}
     passType: 0
     passId: 0
@@ -1928,222 +2144,6 @@ MonoBehaviour:
     subShaderIndex: 0
     upToDate: 0
     keywords: []
-  - shaderCompilerPlatform: 5
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords: []
-  - shaderCompilerPlatform: 9
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords: []
-  - shaderCompilerPlatform: 5
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _FADING_ON
-  - shaderCompilerPlatform: 9
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _FADING_ON
-  - shaderCompilerPlatform: 5
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _CFXR_DISSOLVE
-    - _FADING_ON
-  - shaderCompilerPlatform: 9
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _CFXR_DISSOLVE
-    - _FADING_ON
-  - shaderCompilerPlatform: 5
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _ALPHABLEND_ON
-    - _FADING_ON
-    - _
-  - shaderCompilerPlatform: 9
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _ALPHABLEND_ON
-    - _FADING_ON
-    - _
-  - shaderCompilerPlatform: 5
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _CFXR_DISSOLVE
-    - _FADING_ON
-    - _ALPHABLEND_ON
-    - _
-  - shaderCompilerPlatform: 9
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _CFXR_DISSOLVE
-    - _FADING_ON
-    - _ALPHABLEND_ON
-    - _
-  - shaderCompilerPlatform: 5
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _ALPHATEST_ON
-    - _CFXR_ADDITIVE
-    - _FADING_ON
-    - _
-  - shaderCompilerPlatform: 9
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _ALPHATEST_ON
-    - _CFXR_ADDITIVE
-    - _FADING_ON
-    - _
-  - shaderCompilerPlatform: 5
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _CFXR_DISSOLVE
-    - _FADING_ON
-    - _ALPHATEST_ON
-    - _CFXR_ADDITIVE
-    - _
-  - shaderCompilerPlatform: 9
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _CFXR_DISSOLVE
-    - _FADING_ON
-    - _ALPHATEST_ON
-    - _CFXR_ADDITIVE
-    - _
-  - shaderCompilerPlatform: 5
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _ALPHABLEND_ON
-    - _
-  - shaderCompilerPlatform: 9
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _ALPHABLEND_ON
-    - _
-  - shaderCompilerPlatform: 5
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _CFXR_ADDITIVE
-    - _FADING_ON
-    - _
-  - shaderCompilerPlatform: 9
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _CFXR_ADDITIVE
-    - _FADING_ON
-    - _
-  - shaderCompilerPlatform: 5
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _CFXR_DISSOLVE
-    - _FADING_ON
-    - _CFXR_ADDITIVE
-    - _
-  - shaderCompilerPlatform: 9
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _CFXR_DISSOLVE
-    - _FADING_ON
-    - _CFXR_ADDITIVE
-    - _
-  - shaderCompilerPlatform: 5
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _CFXR_ADDITIVE
-    - _CFXR_DISSOLVE
-    - _
-  - shaderCompilerPlatform: 9
-    shader: {fileID: -6465566751694194690, guid: 1a29b4d27eb8b04479ef89c00dea533d, type: 3}
-    passType: 4
-    passId: 0
-    subShaderIndex: 0
-    upToDate: 0
-    keywords:
-    - _CFXR_ADDITIVE
-    - _CFXR_DISSOLVE
-    - _
   - shaderCompilerPlatform: 5
     shader: {fileID: 4800000, guid: 947afae4d36f1274ea2e4098262ceef6, type: 3}
     passType: 0
@@ -2935,7 +2935,7 @@ MonoBehaviour:
     keywords: []
   _includedShaderVariants: []
   _excludedShaderVariants: []
-  version: 3208
+  version: 3833
   _shaderParsedShaders:
   - ParsedSubShaders:
     - Index: 0
@@ -43721,7 +43721,7 @@ MonoBehaviour:
   _sceneLightData:
     PointLightCount: 0
     SpotLightCount: 0
-    DirectionalLightCount: 36
+    DirectionalLightCount: 1
     LightmapOn: 1
     DirlightmapCombined: 1
     DirectionalCookieExists: 0

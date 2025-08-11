@@ -2383,7 +2383,7 @@ MonoBehaviour:
   - {fileID: 4231764142993000626}
   queues: {fileID: 4232263316415437506}
   vehicles: {fileID: 5122518098932568224}
-  maxMove: 20
+  maxMove: 22
   thoiGian: 120
 --- !u!1 &3347202554028372200
 GameObject:

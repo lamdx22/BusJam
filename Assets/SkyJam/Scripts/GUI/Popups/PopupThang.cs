@@ -8,22 +8,19 @@ namespace SkyJam
 {
     public class PopupThang : MonoBehaviour
     {
+        public AudioClip winClip;
+
         public void Show(int gold)
         {
             gameObject.SetActive(true);
+            LunaManager.Instance.EndGame();
+            //Hiker.GUI.SoundManager.instance.PlaySoundWin();
+            MySoundManager.Instance.PlaySoundWin();
         }
 
-        public void OnUserTapToStore()
-        {
-            GameManager.instance.GoToStore();
-        }
-
-        void Update()
-        {
-            if (Input.GetMouseButtonDown(0) || Input.touchCount > 0)
-            {
-                GameManager.instance.GoToStore();
-            }
-        }
+        //public void OnUserTapToStore()
+        //{
+        //    GameManager.instance.GoToStore();
+        //}
     }
 }

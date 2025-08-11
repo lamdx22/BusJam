@@ -1,8 +1,8 @@
 {
     "version": "6.3.0",
     "projectId": "3f7c89647224b7448946645f95d33821",
-    "applicationID": 31279,
-    "creativeName": "250808_LamDX_ColorBusJam_test4",
+    "applicationID": 0,
+    "creativeName": "250811_LamDX_ColorBusJam_test6",
     "pgServer": "EU",
     "window": {
         "‐″": true
@@ -147,8 +147,41 @@
                 "Assets/SkyJam/2D_GUI/NoAtlas/Sound Off.png",
                 "Assets/SkyJam/2D_GUI/NoAtlas/Sound On.png",
                 "Assets/SkyJam/2D_GUI/NoAtlas/VideoAd.png",
+                "Assets/SkyJam/3D/car_L_L_2/car_L_L_2.fbx",
+                "Assets/SkyJam/3D/car_L_L_2/car_L_L_2_T2.fbx",
+                "Assets/SkyJam/3D/car_L_L_2/hop_L_L_2.fbx",
+                "Assets/SkyJam/3D/car_L_L_2/hop_L_L_2_T2.fbx",
+                "Assets/SkyJam/3D/car_L_S/car_L_S.fbx",
+                "Assets/SkyJam/3D/car_L_S/car_L_S_T2.fbx",
+                "Assets/SkyJam/3D/car_L_S/hop_L_S.fbx",
+                "Assets/SkyJam/3D/car_L_S/hop_L_S_T2.fbx",
+                "Assets/SkyJam/3D/car_T_1/car_T_1.fbx",
+                "Assets/SkyJam/3D/car_T_1/car_T_1_T2.fbx",
+                "Assets/SkyJam/3D/car_T_1/hop_T_1.fbx",
+                "Assets/SkyJam/3D/car_T_1/hop_T_1_T2.fbx",
+                "Assets/SkyJam/3D/PowerUps/ITEM_POW_Freeze.fbx",
+                "Assets/SkyJam/3D/PowerUps/ITEM_POW_Freeze.png",
+                "Assets/SkyJam/3D/PowerUps/POW_hammer.fbx",
+                "Assets/SkyJam/3D/PowerUps/POW_magnet.fbx",
+                "Assets/SkyJam/3D/ice.png",
+                "Assets/SkyJam/3D/rock.png",
+                "Assets/SkyJam/3D/stone.fbx",
+                "Assets/SkyJam/3D/stone.png",
+                "Assets/SkyJam/3D/stone2.fbx",
+                "Assets/SkyJam/3D/stone2.png",
+                "Assets/SkyJam/3D/woodenbox_1.fbx",
+                "Assets/SkyJam/3D/woodenbox_2.fbx",
+                "Assets/SkyJam/3D/woodenbox_3.fbx",
+                "Assets/SkyJam/3D/Wooden_cube.png",
                 "Assets/SkyJam/Music/battle.mp3",
+                "Assets/SkyJam/Prefabs/GUI/Items/PowUpBtn.prefab",
+                "Assets/SkyJam/Prefabs/GUI/Items/ShopGoldItem.prefab",
                 "Assets/SkyJam/Resources/Prefabs/Stones/",
+                "Assets/SkyJam/Resources/Prefabs/Vehicles/Veh4SL.prefab",
+                "Assets/SkyJam/Resources/Prefabs/Vehicles/Veh4SR.prefab",
+                "Assets/SkyJam/Resources/Prefabs/Vehicles/Veh4T.prefab",
+                "Assets/SkyJam/Resources/Prefabs/BuaVisual.prefab",
+                "Assets/SkyJam/Resources/Prefabs/ChiaKhoaVisual.prefab",
                 "Assets/SkyJam/Resources/SFX/battle_pu_bua.wav",
                 "Assets/SkyJam/Resources/SFX/battle_pu_cua.wav",
                 "Assets/SkyJam/Resources/SFX/battle_pu_freeze_start.wav",
@@ -160,6 +193,7 @@
                 "Assets/SkyJam/Resources/Sprite Assets/Gold.asset",
                 "Assets/SkyJam/Resources/Sprite Assets/Heart.asset",
                 "Assets/SkyJam/Resources/Sprite Assets/VideoAd.asset",
+                "Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf",
                 "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
                 "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
                 "Assets/TextMesh Pro/Sprites/EmojiOne.png",
@@ -202,20 +236,7 @@
                 "Stubs/AppsFlyer",
                 "Stubs/IronSource",
                 "Stubs/Vungle",
-                "Stubs/MoreMountains.NiceVibrations",
-                "Assets/SkyJam/3D/woodenbox_3.fbx",
-                "Assets/SkyJam/3D/woodenbox_2.fbx",
-                "Assets/SkyJam/3D/woodenbox_1.fbx",
-                "Assets/SkyJam/3D/PowerUps/POW_magnet.fbx",
-                "Assets/SkyJam/3D/PowerUps/POW_magnet.fbx",
-                "Assets/XoanDay/Meshes/Khoa_fbx.fbx",
-                "Assets/XoanDay/Meshes/Khoa_fbx.fbx",
-                "Assets/SkyJam/3D/Wooden_cube.png",
-                "Assets/SkyJam/3D/ice.png",
-                "Assets/XoanDay/Meshes/NN_Key2_dif.png",
-                "Assets/SkyJam/3D/PowerUps/ITEM_POW_Freeze.png",
-                "Assets/XoanDay/Meshes/NN_Key_Lock_dif.png",
-                "Assets/SkyJam/Prefabs/GUI/Items/PowUpBtn.prefab"
+                "Stubs/MoreMountains.NiceVibrations"
             ],
             "includes": [
                 "Assets/Resources/DOTweenSettings.asset",
@@ -33381,14 +33402,6 @@
                     {
                         "name": "Show",
                         "excluded": false
-                    },
-                    {
-                        "name": "OnUserTapToStore",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Update",
-                        "excluded": true
                     }
                 ]
             },
@@ -33398,14 +33411,6 @@
                 "instanceMethods": [
                     {
                         "name": "Show",
-                        "excluded": false
-                    },
-                    {
-                        "name": "OnUserTapToStore",
-                        "excluded": false
-                    },
-                    {
-                        "name": "Update",
                         "excluded": false
                     }
                 ]
@@ -34266,7 +34271,7 @@
                     },
                     {
                         "name": "OnDemandTextureLoader#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDemandTextureLoader#set",
@@ -49869,6 +49874,70 @@
                         "excluded": true
                     }
                 ]
+            },
+            {
+                "className": "LunaManager",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "EndGame",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GoToStore",
+                        "excluded": false
+                    },
+                    {
+                        "name": "EndGameAndGoToStore",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "MySoundManager",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PlaySoundWin",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PlaySoundLose",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PlaySfxBay",
+                        "excluded": true
+                    },
+                    {
+                        "name": "PlaySfxSound",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PlayMainMusic",
+                        "excluded": false
+                    },
+                    {
+                        "name": "StopMainMusic",
+                        "excluded": false
+                    }
+                ]
             }
         ],
         "stubberDataList": [],
@@ -49954,7 +50023,7 @@
                     "startTime": "00:00.000",
                     "endTime": "00:30.000",
                     "lengthInSeconds": 30.0,
-                    "bitrate": 128,
+                    "bitrate": 32,
                     "script": "",
                     "ext": ""
                 },
@@ -49978,56 +50047,6 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/SkyJam/Resources/SFX/battle_booster_clock.wav"
-                    },
-                    {
-                        "channels": 1,
-                        "startTime": "00:00.000",
-                        "endTime": "03:04.612",
-                        "lengthInSeconds": 184.61199951171876,
-                        "bitrate": 32,
-                        "script": "",
-                        "ext": "",
-                        "name": "Assets/SkyJam/Music/main.mp3"
-                    },
-                    {
-                        "channels": 1,
-                        "startTime": "00:00.000",
-                        "endTime": "00:30.000",
-                        "lengthInSeconds": 30.0,
-                        "bitrate": 128,
-                        "script": "",
-                        "ext": "",
-                        "name": "Assets/SkyJam/Sound/car_fly.wav"
-                    },
-                    {
-                        "channels": 1,
-                        "startTime": "00:00.000",
-                        "endTime": "00:30.000",
-                        "lengthInSeconds": 0.0,
-                        "bitrate": 128,
-                        "script": "",
-                        "ext": "",
-                        "name": "Assets/SkyJam/Sound/Button - High.wav"
-                    },
-                    {
-                        "channels": 1,
-                        "startTime": "00:00.000",
-                        "endTime": "00:30.000",
-                        "lengthInSeconds": 0.0,
-                        "bitrate": 128,
-                        "script": "",
-                        "ext": "",
-                        "name": "Assets/SkyJam/Sound/Button - Low.wav"
-                    },
-                    {
-                        "channels": 1,
-                        "startTime": "00:00.000",
-                        "endTime": "00:30.000",
-                        "lengthInSeconds": 0.0,
-                        "bitrate": 128,
-                        "script": "",
-                        "ext": "",
-                        "name": "Assets/SkyJam/Sound/Jump2.wav"
                     }
                 ]
             },

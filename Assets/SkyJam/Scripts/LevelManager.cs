@@ -228,7 +228,7 @@ namespace SkyJam
             {
                 var meteor = Instantiate(prefab, targetPos, Quaternion.Euler(0, 0, Random.Range(-180, 180)));
 
-                SoundManager.instance?.PlaySound("SFX/meteor_start");
+                //SoundManager.instance?.PlaySound("SFX/meteor_start");
                 yield return StartCoroutine(DoDropMeteor(meteor.transform, targetPos, Vector3.forward * 9.8f, (Random.Range(0, 100) < 50 ? Vector3.right : Vector3.left) * 10, fallingTime, true));
 
                 Destroy(meteor, 0.1f);
@@ -239,7 +239,7 @@ namespace SkyJam
             }
 
             ObjectPoolManager.SpawnAutoDestroy("VFX/MeteorImpact", targetPos, Quaternion.identity, 3f);
-            SoundManager.instance?.PlaySound("SFX/meteor_impact");
+            //SoundManager.instance?.PlaySound("SFX/meteor_impact");
             HikerHaptic.instance?.PlayHeavyImpact();
 
             yield return StartCoroutine(xe.DoShinkMinor());
@@ -354,7 +354,8 @@ namespace SkyJam
             {
                 if (GetRemainPassengerOnBoard() > 0)
                 {
-                    OnReachMaxMove(); // Xử lý thất bại
+                    //OnReachMaxMove(); // Xử lý thất bại
+                    GameManager.instance.OnReachMaxMove();
                 }
                 else
                 {
@@ -890,7 +891,7 @@ namespace SkyJam
                                 StartCoroutine(DoHammerOnVeh(veh, targetPos));
                                 DOVirtual.DelayedCall(0.35f, () =>
                                 {
-                                    SoundManager.instance?.PlaySound("SFX/battle_pu_bua");
+                                    //SoundManager.instance?.PlaySound("SFX/battle_pu_bua");
                                 }, true);
                             }
                             OnHuyBua();
@@ -958,7 +959,7 @@ namespace SkyJam
                                     StartCoroutine(veh.DoMagnetUse());
                                     DOVirtual.DelayedCall(0.35f, () =>
                                     {
-                                        SoundManager.instance?.PlaySound("SFX/battle_pu_hut");
+                                        //SoundManager.instance?.PlaySound("SFX/battle_pu_hut");
                                     }, true);
                                 }
                             }

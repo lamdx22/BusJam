@@ -84,11 +84,11 @@ public partial class GameManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
-        if (SoundManager.instance)
-        {
-            SoundManager.instance.MusicEnable = false;
-            SoundManager.instance.SaveSoundAndMusicSetting();
-        }
+        //if (SoundManager.instance)
+        //{
+        //    SoundManager.instance.MusicEnable = false;
+        //    SoundManager.instance.SaveSoundAndMusicSetting();
+        //}
     }
 
     // Start is called before the first frame update
@@ -98,7 +98,8 @@ public partial class GameManager : MonoBehaviour
 
         popupLoadLevel.LoadLevel(levels[curLvl], levelNums[curLvl], false);
 
-        SoundManager.instance?.StartMainMusic();
+        //SoundManager.instance?.StartMainMusic();
+        MySoundManager.Instance.PlayMainMusic();
     }
 
     public bool LoadNextLevel()
@@ -107,8 +108,7 @@ public partial class GameManager : MonoBehaviour
         curLvl++;
         if (curLvl >= levels.Length)
         {
-            SoundManager.instance.StartFadeOutMusic();
-            SoundManager.instance.PlaySoundWin();
+            //SoundManager.instance.StartFadeOutMusic();
             popupWin.Show(0);
             return false;
         }
@@ -122,7 +122,7 @@ public partial class GameManager : MonoBehaviour
 
     public void OnReachMaxMove()
     {
-        popupLose.Show();
+        LunaManager.Instance.EndGameAndGoToStore();
     }
 
     public void OnCompleteXe()
@@ -133,8 +133,7 @@ public partial class GameManager : MonoBehaviour
     public void OnLose()
     {
         var curLvl = PInfo.Level;
-        SoundManager.instance.StartFadeOutMusic();
-        SoundManager.instance.PlaySoundLose();
+        //SoundManager.instance.StartFadeOutMusic();
         popupLose.Show();
     }
 

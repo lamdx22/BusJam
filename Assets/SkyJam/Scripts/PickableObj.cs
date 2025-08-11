@@ -115,7 +115,8 @@ public class PickableObj : MonoBehaviour
 
         if (sfxNhacLen)
         {
-            SoundManager.instance?.PlaySound(sfxNhacLen, 1f);
+            //SoundManager.instance?.PlaySound(sfxNhacLen, 1f);
+            MySoundManager.Instance?.PlaySfxSound(sfxNhacLen, 1f);
         }
 
         HikerHaptic.instance?.PlayTapEffect();
@@ -132,7 +133,7 @@ public class PickableObj : MonoBehaviour
 
         if (sfxHaXuong)
         {
-            SoundManager.instance?.PlaySound(sfxHaXuong, 1f);
+            MySoundManager.Instance?.PlaySfxSound(sfxHaXuong, 1f);
         }
     }
 
