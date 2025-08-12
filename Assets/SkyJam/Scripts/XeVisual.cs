@@ -188,6 +188,8 @@ public class XeVisual : MonoBehaviour
             MySoundManager.Instance?.PlaySfxSound(sfxBay, 1f);
         }
 
+        MySoundManager.Instance?.PlaySfxYay();
+
         if (visual)
         {
             visual.DOMoveZ(-6f, 0.25f).SetUpdate(true);

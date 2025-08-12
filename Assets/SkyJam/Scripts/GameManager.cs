@@ -2,6 +2,7 @@ using Hiker.GUI;
 using SkyJam;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using DateTime = System.DateTime;
 
@@ -17,6 +18,10 @@ public partial class GameManager : MonoBehaviour
     public BoardController[] levels;
     public int[] levelNums;
 
+    [SerializeField]
+    private GameObject engageTitle;
+
+
     public const string Booster_Meteor = "BO_ThienThach";
     public const string Booster_DongHo = "BO_DongHo";
     public const string Booster_MeteorTime = "BO_ThienThachTime";
@@ -29,6 +34,8 @@ public partial class GameManager : MonoBehaviour
     public static GameManager instance = null;
 
     public PlayerInfo PInfo = new PlayerInfo();
+
+    public bool HasFirstTouch {  get; private set; }
 
     static readonly Dictionary<string, int> unlockDic = new Dictionary<string, int>()
     {
@@ -99,7 +106,18 @@ public partial class GameManager : MonoBehaviour
         popupLoadLevel.LoadLevel(levels[curLvl], levelNums[curLvl], false);
 
         //SoundManager.instance?.StartMainMusic();
-        MySoundManager.Instance.PlayMainMusic();
+        HasFirstTouch = false;
+        //MySoundManager.Instance.PlayMainMusic();
+
+    }
+
+    private void Update()
+    {
+        if (!HasFirstTouch && Input.GetMouseButton(0))
+        {
+            HasFirstTouch = true;
+            engageTitle.gameObject.SetActive(false);
+        }
     }
 
     public bool LoadNextLevel()

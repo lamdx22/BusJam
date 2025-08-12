@@ -1,8 +1,8 @@
 {
     "version": "6.3.0",
     "projectId": "3f7c89647224b7448946645f95d33821",
-    "applicationID": 0,
-    "creativeName": "250811_LamDX_ColorBusJam_test6",
+    "applicationID": 31279,
+    "creativeName": "250812_LamDX_ColorBusJam_test7",
     "pgServer": "EU",
     "window": {
         "‐″": true
@@ -173,7 +173,6 @@
                 "Assets/SkyJam/3D/woodenbox_2.fbx",
                 "Assets/SkyJam/3D/woodenbox_3.fbx",
                 "Assets/SkyJam/3D/Wooden_cube.png",
-                "Assets/SkyJam/Music/battle.mp3",
                 "Assets/SkyJam/Prefabs/GUI/Items/PowUpBtn.prefab",
                 "Assets/SkyJam/Prefabs/GUI/Items/ShopGoldItem.prefab",
                 "Assets/SkyJam/Resources/Prefabs/Stones/",
@@ -242,7 +241,7 @@
                 "Assets/Resources/DOTweenSettings.asset",
                 "Assets/SkyJam/Levels/L3.prefab",
                 "Assets/SkyJam/Levels/L6.prefab",
-                "Assets/SkyJam/Music/main.mp3",
+                "Assets/SkyJam/Music/battle.mp3",
                 "Assets/SkyJam/Resources/Prefabs/",
                 "Assets/TextMesh Pro/Resources/TMP Settings.asset"
             ]
@@ -1482,10 +1481,6 @@
                 "excluded": true
             },
             {
-                "name": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.Avatar.TOSPair",
-                "excluded": true
-            },
-            {
                 "name": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.TransformMaskElement",
                 "excluded": true
             },
@@ -2018,10 +2013,6 @@
                 "excluded": true
             },
             {
-                "name": "UnityEngine.Avatar",
-                "excluded": true
-            },
-            {
                 "name": "UnityEngine.AvatarMask",
                 "excluded": true
             },
@@ -2319,10 +2310,6 @@
             },
             {
                 "name": "UnityEngine.Playables.PlayableDirector",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.SkinnedMeshRenderer",
                 "excluded": true
             },
             {
@@ -5883,7 +5870,7 @@
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.Avatar",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.AvatarMask",
@@ -6159,10 +6146,6 @@
             },
             {
                 "name": "UnityEngine.UI.ReflectionMethodsCache",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.UI.SetPropertyUtility",
                 "excluded": true
             },
             {
@@ -6863,7 +6846,7 @@
             },
             {
                 "name": "DG.Tweening.LinkBehaviour",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "DG.Tweening.PathMode",
@@ -16119,7 +16102,7 @@
                     },
                     {
                         "name": "GetState",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -19345,7 +19328,7 @@
                     },
                     {
                         "name": "GetState$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetMotion",
@@ -19823,11 +19806,11 @@
                     },
                     {
                         "name": "SetTexture$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetTexture",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetTextureScale$1",
@@ -19955,7 +19938,7 @@
                     },
                     {
                         "name": "ComputeCRC",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -20603,7 +20586,7 @@
                     },
                     {
                         "name": "SetAsFirstSibling",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetEnumerator",
@@ -21921,7 +21904,7 @@
                     },
                     {
                         "name": "pivot#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "anchoredPosition#get",
@@ -21937,7 +21920,7 @@
                     },
                     {
                         "name": "sizeDelta#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "rect#get",
@@ -22591,7 +22574,7 @@
                     },
                     {
                         "name": "Play$4",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Play$1",
@@ -22607,7 +22590,7 @@
                     },
                     {
                         "name": "Play$2",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Rebind",
@@ -22695,11 +22678,11 @@
                     },
                     {
                         "name": "CheckMecanimFeatureCompatibility",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "HasFlag",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "LogUnsupportedMessage",
@@ -24357,7 +24340,7 @@
                     },
                     {
                         "name": "raycastTarget#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "color#get",
@@ -24587,7 +24570,7 @@
                     },
                     {
                         "name": "ignoreLayout#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "init",
@@ -26333,7 +26316,7 @@
                     },
                     {
                         "name": "fontSharedMaterial#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "fontSharedMaterial#set",
@@ -26521,7 +26504,7 @@
                     },
                     {
                         "name": "isUsingBold#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "horizontalAlignment#get",
@@ -26649,7 +26632,7 @@
                     },
                     {
                         "name": "extraPadding#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "extraPadding#set",
@@ -28023,7 +28006,7 @@
                     },
                     {
                         "name": "GetFallbackMaterial$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetFallbackMaterial",
@@ -28031,7 +28014,7 @@
                     },
                     {
                         "name": "AddFallbackMaterialReference",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RemoveFallbackMaterialReference",
@@ -28039,11 +28022,11 @@
                     },
                     {
                         "name": "CleanupFallbackMaterials",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ReleaseFallbackMaterial",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CopyMaterialPresetProperties",
@@ -28079,7 +28062,7 @@
                     },
                     {
                         "name": "getDefaultValue",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "$ctor1",
@@ -28111,7 +28094,7 @@
                     },
                     {
                         "name": "ClearUnusedVertices",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ClearUnusedVertices$1",
@@ -28611,7 +28594,7 @@
                 "instanceMethods": [
                     {
                         "name": "AddSubTextObject",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "fontAsset#get",
@@ -28643,7 +28626,7 @@
                     },
                     {
                         "name": "sharedMaterial#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sharedMaterial#set",
@@ -28655,7 +28638,7 @@
                     },
                     {
                         "name": "fallbackMaterial#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "fallbackSourceMaterial#get",
@@ -28663,11 +28646,11 @@
                     },
                     {
                         "name": "fallbackSourceMaterial#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "materialForRendering#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "isDefaultMaterial#get",
@@ -28679,7 +28662,7 @@
                     },
                     {
                         "name": "padding#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "padding#set",
@@ -28687,7 +28670,7 @@
                     },
                     {
                         "name": "mesh#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "mesh#set",
@@ -28695,15 +28678,15 @@
                     },
                     {
                         "name": "textComponent#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnEnable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "OnDestroy",
@@ -28715,11 +28698,11 @@
                     },
                     {
                         "name": "GetModifiedMaterial",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetPaddingForMaterial",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetPaddingForMaterial$1",
@@ -28735,7 +28718,7 @@
                     },
                     {
                         "name": "SetVerticesDirty",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetLayoutDirty",
@@ -28743,7 +28726,7 @@
                     },
                     {
                         "name": "SetMaterialDirty",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetPivotDirty",
@@ -28771,11 +28754,11 @@
                     },
                     {
                         "name": "UpdateMaterial",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RecalculateClipping",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetMaterial",
@@ -28795,7 +28778,7 @@
                     },
                     {
                         "name": "SetSharedMaterial",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -30401,7 +30384,7 @@
                 "instanceMethods": [
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -30451,11 +30434,11 @@
                     },
                     {
                         "name": "AddTweenLink",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "RemoveTweenLink",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ResetCapacities",
@@ -30563,7 +30546,7 @@
                     },
                     {
                         "name": "EvaluateTweenLink",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "AddActiveTween",
@@ -31075,7 +31058,7 @@
                     },
                     {
                         "name": "SetLink$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetTarget",
@@ -32709,6 +32692,10 @@
                     },
                     {
                         "name": "OnReachMaxMove",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
                         "excluded": false
                     }
                 ]
@@ -38589,7 +38576,7 @@
                     },
                     {
                         "name": "RebuildUsers",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetAllDirty",
@@ -49880,10 +49867,6 @@
                 "staticMethods": [],
                 "instanceMethods": [
                     {
-                        "name": "init",
-                        "excluded": false
-                    },
-                    {
                         "name": "Awake",
                         "excluded": false
                     },
@@ -49901,6 +49884,10 @@
                     },
                     {
                         "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
                         "excluded": false
                     }
                 ]
@@ -49922,10 +49909,6 @@
                         "excluded": false
                     },
                     {
-                        "name": "PlaySfxBay",
-                        "excluded": true
-                    },
-                    {
                         "name": "PlaySfxSound",
                         "excluded": false
                     },
@@ -49936,6 +49919,196 @@
                     {
                         "name": "StopMainMusic",
                         "excluded": false
+                    },
+                    {
+                        "name": "PlaySfxYay",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "Luna.Unity.DTO.UnityEngine.Animation.Mecanim.Avatar.TOSPair",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "getDefaultValue",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "getHashCode",
+                        "excluded": true
+                    },
+                    {
+                        "name": "equals",
+                        "excluded": true
+                    },
+                    {
+                        "name": "$clone",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.Avatar",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "humanDescription#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetMuscleMinMax",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetParameter",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetAxisLength",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetPreRotation",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetPostRotation",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetZYPostQ",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetZYRoll",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetLimitSign",
+                        "excluded": true
+                    },
+                    {
+                        "name": "public_GetAxisLength",
+                        "excluded": true
+                    },
+                    {
+                        "name": "public_GetPreRotation",
+                        "excluded": true
+                    },
+                    {
+                        "name": "public_GetPostRotation",
+                        "excluded": true
+                    },
+                    {
+                        "name": "public_GetZYPostQ",
+                        "excluded": true
+                    },
+                    {
+                        "name": "public_GetZYRoll",
+                        "excluded": true
+                    },
+                    {
+                        "name": "public_GetLimitSign",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.SkinnedMeshRenderer",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "m_BlendShapeWeights#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "m_BlendShapeWeights#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "sharedMesh#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "sharedMesh#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "rootBone#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "rootBone#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "bones#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "bones#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "blendShape#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetBlendShapeWeight",
+                        "excluded": true
+                    },
+                    {
+                        "name": "GetBlendShapeWeight",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "Monster",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "Awake",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.UI.SetPropertyUtility",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "SetColor",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetStruct",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetClass",
+                        "excluded": true
                     }
                 ]
             }
@@ -50047,6 +50220,56 @@
                         "script": "",
                         "ext": "",
                         "name": "Assets/SkyJam/Resources/SFX/battle_booster_clock.wav"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.116",
+                        "lengthInSeconds": 30.115999221801759,
+                        "bitrate": 32,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/SkyJam/Music/battle.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "01:28.606",
+                        "lengthInSeconds": 88.60600280761719,
+                        "bitrate": 32,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/SkyJam/Sound/428156__higgs01__yay.wav"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 0.0,
+                        "bitrate": 32,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/SkyJam/Music/main.mp3"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 0.0,
+                        "bitrate": 32,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/SkyJam/Sound/gui_click.wav"
+                    },
+                    {
+                        "channels": 1,
+                        "startTime": "00:00.000",
+                        "endTime": "00:30.000",
+                        "lengthInSeconds": 0.0,
+                        "bitrate": 32,
+                        "script": "",
+                        "ext": "",
+                        "name": "Assets/SkyJam/Music/battle.wav"
                     }
                 ]
             },

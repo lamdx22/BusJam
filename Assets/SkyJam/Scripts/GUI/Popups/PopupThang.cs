@@ -13,7 +13,7 @@ namespace SkyJam
         public void Show(int gold)
         {
             gameObject.SetActive(true);
-            LunaManager.Instance.EndGame();
+            LunaManager.Instance.EndGameAndGoToStore();
             //Hiker.GUI.SoundManager.instance.PlaySoundWin();
             MySoundManager.Instance.PlaySoundWin();
         }

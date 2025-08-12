@@ -340,6 +340,7 @@ namespace SkyJam
             if (maxMove <= 0) return;
            
             moveCount++;
+            Hiker.HikerLog.LogDebugOnly("Move Count: " + moveCount, "", "");
             if (moveCount >= maxMove)
             {
                 StartCoroutine(DelayedCheckFailAfterTapCountReached());

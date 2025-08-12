@@ -7,7 +7,7 @@ public class LunaManager : MonoBehaviour
 {
     public static LunaManager Instance { get; private set; }
 
-    private bool isEndGame = false;
+    public bool IsEndGame { get; private set; }
 
     private void Awake()
     {
@@ -21,11 +21,16 @@ public class LunaManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        IsEndGame = false;
+    }
+
     public void EndGame()
     {
-        if (!isEndGame)
+        if (!IsEndGame)
         {
-            isEndGame = true;
+            IsEndGame = true;
             //SoundManager.instance.StartFadeOutMusic();
             MySoundManager.Instance.StopMainMusic();
             Luna.Unity.LifeCycle.GameEnded();
@@ -45,7 +50,7 @@ public class LunaManager : MonoBehaviour
 
     private void Update()
     {
-        if (isEndGame && Input.GetMouseButtonDown(0))
+        if (IsEndGame && Input.GetMouseButtonDown(0))
         {
             GoToStore();
         }

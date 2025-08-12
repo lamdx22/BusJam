@@ -13,6 +13,7 @@ namespace SkyJam
         public Vector2Int Size = new Vector2Int(5, 5);
         public float GridSpace = 1f;
         public Vector2 ExtendView = Vector2.zero;
+        public Vector2 OffsetPos = Vector2.zero;
 
         public Tilemap map;
 
@@ -35,7 +36,7 @@ namespace SkyJam
         public Vector2 GetCenterPos()
         {
             var boxSize = (Vector2)Size * GridSpace;
-            var centerBox = new Vector2(0.5f * boxSize.x, -0.5f * boxSize.y);
+            var centerBox = new Vector2((0.5f + OffsetPos.x) * boxSize.x, (-0.5f + OffsetPos.y) * boxSize.y);
             return centerBox;
         }
 

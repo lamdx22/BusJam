@@ -12,7 +12,6 @@ public class HandTip : MonoBehaviour
     public float moveTime = 0.2f;
     public float fadeTime = 0.2f;
 
-    private bool isFirstTouch = false;
     private SpriteRenderer sr;
     private Vector3 startPos;
 
@@ -21,7 +20,6 @@ public class HandTip : MonoBehaviour
     {
         startPos = transform.position;
         sr = GetComponent<SpriteRenderer>();
-        isFirstTouch = false;
 
         //transform.DOMove(targetPoint.position, duration).SetLoops(-1, LoopType.Restart);
         Sequence seq = DOTween.Sequence();
@@ -33,19 +31,14 @@ public class HandTip : MonoBehaviour
                transform.position = startPos; // về lại chỗ cũ
            })
            .Append(sr.DOFade(1f, fadeTime)) // Hiện lại
-           .SetLoops(-1); // Lặp vô hạn
+           .SetLoops(-1)
+           .SetLink(gameObject, LinkBehaviour.KillOnDestroy); // Lặp vô hạn
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
-        {
-            isFirstTouch = true;
-            //SoundManager.instance?.StartMainMusic();
-        }
-
-        if (isFirstTouch)
+        if (GameManager.instance.HasFirstTouch)
         {
             Destroy(gameObject);
         }

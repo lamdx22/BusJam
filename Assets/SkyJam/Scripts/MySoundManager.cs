@@ -16,6 +16,7 @@ public class MySoundManager : MonoBehaviour
     public AudioClip nhaclen_clip;
     public AudioClip haxuong_clip;
     public AudioClip sfxBay_clip;
+    public AudioClip sfxYay_clip;
 
     private void Awake()
     {
@@ -32,9 +33,9 @@ public class MySoundManager : MonoBehaviour
         if (lose_clip != null) PlaySfxSound(lose_clip, 1f);
     }
 
-    public void PlaySfxBay()
+    public void PlaySfxYay()
     {
-        if (sfxBay_clip != null) PlaySfxSound(sfxBay_clip, 1f);
+        if (sfxYay_clip != null) PlaySfxSound(sfxYay_clip, 1f);
     }
 
     public void PlaySfxSound(AudioClip clip, float volume = 1f)
