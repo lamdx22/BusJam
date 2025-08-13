@@ -21,6 +21,9 @@ public partial class GameManager : MonoBehaviour
     [SerializeField]
     private GameObject engageTitle;
 
+    public int maxRetry = 1;
+    int retryCount = 0;
+
 
     public const string Booster_Meteor = "BO_ThienThach";
     public const string Booster_DongHo = "BO_DongHo";
@@ -103,6 +106,8 @@ public partial class GameManager : MonoBehaviour
     {
         var curLvl = PInfo.Level;
 
+        engageTitle.SetActive(true);
+
         popupLoadLevel.LoadLevel(levels[curLvl], levelNums[curLvl], false);
 
         //SoundManager.instance?.StartMainMusic();
@@ -141,6 +146,21 @@ public partial class GameManager : MonoBehaviour
     public void OnReachMaxMove()
     {
         LunaManager.Instance.EndGameAndGoToStore();
+    }
+
+    public void OnRetry()
+    {
+        if (retryCount < maxRetry)
+        {
+            retryCount++;
+            popupLose.gameObject.SetActive(false);
+            var curLvl = PInfo.Level;
+            popupLoadLevel.LoadLevel(levels[curLvl], levelNums[curLvl], true);
+        } 
+        else
+        {
+            LunaManager.Instance.EndGameAndGoToStore();
+        }
     }
 
     public void OnCompleteXe()

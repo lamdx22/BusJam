@@ -38,7 +38,7 @@ public class HandTip : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.instance.HasFirstTouch)
+        if (LevelManager.instance.State == LevelStatus.Started)
         {
             Destroy(gameObject);
         }

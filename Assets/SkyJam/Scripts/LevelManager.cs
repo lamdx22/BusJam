@@ -400,6 +400,20 @@ namespace SkyJam
             }
         }
 
+        public void OnMonsterKill()
+        {
+            if (state == LevelStatus.Started)
+            {
+                state = LevelStatus.TimeOut;
+                Hiker.HikerLog.LogEditorOnly("Monster Kill", "LEVEL", "yellow");
+
+                HikerUtils.DoAction(this, () =>
+                {
+                    GameManager.instance.OnLose();
+                }, 1.5f, true);
+            }
+        }
+
         private void OnEnable()
         {
             instance = this;

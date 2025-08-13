@@ -1,7 +1,7 @@
 {
     "version": "6.3.0",
     "projectId": "3f7c89647224b7448946645f95d33821",
-    "applicationID": 31279,
+    "applicationID": 0,
     "creativeName": "250812_LamDX_ColorBusJam_test7",
     "pgServer": "EU",
     "window": {
@@ -108,21 +108,12 @@
                 "Assets/SkyJam/2D/Tilemap/Tiles/",
                 "Assets/SkyJam/2D_GUI/Icons/BO_DongHo.png",
                 "Assets/SkyJam/2D_GUI/Icons/BO_ThienThach.png",
-                "Assets/SkyJam/2D_GUI/Icons/btn_close.png",
-                "Assets/SkyJam/2D_GUI/Icons/btn_setting.png",
-                "Assets/SkyJam/2D_GUI/Icons/icon_check.png",
                 "Assets/SkyJam/2D_GUI/Icons/icon_coin.png",
                 "Assets/SkyJam/2D_GUI/Icons/icon_dislike.png",
                 "Assets/SkyJam/2D_GUI/Icons/icon_heart.png",
                 "Assets/SkyJam/2D_GUI/Icons/icon_like.png",
                 "Assets/SkyJam/2D_GUI/Icons/icon_lock.png",
                 "Assets/SkyJam/2D_GUI/Icons/icon_Lock2.png",
-                "Assets/SkyJam/2D_GUI/Icons/icon_time1.png",
-                "Assets/SkyJam/2D_GUI/Icons/icon_unlimit.png",
-                "Assets/SkyJam/2D_GUI/Icons/icon_unlimit_green.png",
-                "Assets/SkyJam/2D_GUI/Icons/ico_info_building.png",
-                "Assets/SkyJam/2D_GUI/Icons/Noti.png",
-                "Assets/SkyJam/2D_GUI/Icons/Noti_2.png",
                 "Assets/SkyJam/2D_GUI/Icons/POW_Wrench_anim.png",
                 "Assets/SkyJam/2D_GUI/Icons/PO_Bang.png",
                 "Assets/SkyJam/2D_GUI/Icons/PO_Bua.png",
@@ -2078,10 +2069,6 @@
             },
             {
                 "name": "UnityEngine.TooltipAttribute",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.WaitForSeconds",
                 "excluded": true
             },
             {
@@ -7505,10 +7492,6 @@
                 "excluded": true
             },
             {
-                "name": "Dreamteck.Splines.SplineFollower",
-                "excluded": true
-            },
-            {
                 "name": "Dreamteck.Splines.SplineMesh",
                 "excluded": true
             },
@@ -7762,15 +7745,15 @@
             },
             {
                 "name": "Dreamteck.Splines.SplineFollower.FloatEvent",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "Dreamteck.Splines.SplineFollower.FollowMode",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "Dreamteck.Splines.SplineFollower.Wrap",
-                "excluded": true
+                "excluded": false
             },
             {
                 "name": "Dreamteck.Splines.SplineMesh.Channel.MeshDefinition.MirrorMethod",
@@ -22450,7 +22433,7 @@
                     },
                     {
                         "name": "ResetTrigger$1",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ResetTrigger",
@@ -22510,7 +22493,7 @@
                     },
                     {
                         "name": "GetCurrentAnimatorStateInfo",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "SetLayerWeight",
@@ -32697,6 +32680,10 @@
                     {
                         "name": "Update",
                         "excluded": false
+                    },
+                    {
+                        "name": "OnRetry",
+                        "excluded": false
                     }
                 ]
             },
@@ -33378,6 +33365,10 @@
                     },
                     {
                         "name": "OnReachMaxMove",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnMonsterKill",
                         "excluded": false
                     }
                 ]
@@ -35054,11 +35045,11 @@
                 "instanceMethods": [
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetKeys",
@@ -35078,7 +35069,7 @@
                     },
                     {
                         "name": "GetSpeed",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -35658,7 +35649,7 @@
                     },
                     {
                         "name": "OnDisable",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Update",
@@ -39732,7 +39723,7 @@
                     },
                     {
                         "name": "result#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "modifiedResult#get",
@@ -39748,11 +39739,11 @@
                     },
                     {
                         "name": "direction#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "direction#set",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Awake",
@@ -39764,7 +39755,7 @@
                     },
                     {
                         "name": "SetPercent",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetPercent",
@@ -39784,7 +39775,7 @@
                     },
                     {
                         "name": "GetTransform",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ApplyMotion",
@@ -39792,11 +39783,11 @@
                     },
                     {
                         "name": "CheckNodes",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "InvokeNodes",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "CheckTriggers",
@@ -47894,7 +47885,7 @@
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     }
                 ]
             },
@@ -50091,6 +50082,18 @@
                     {
                         "name": "init",
                         "excluded": false
+                    },
+                    {
+                        "name": "StartAction",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Attack",
+                        "excluded": false
+                    },
+                    {
+                        "name": "OnTriggerEnter2D",
+                        "excluded": false
                     }
                 ]
             },
@@ -50109,6 +50112,110 @@
                     {
                         "name": "SetClass",
                         "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "Dreamteck.Splines.SplineFollower",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "followSpeed#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "followSpeed#set",
+                        "excluded": false
+                    },
+                    {
+                        "name": "direction#get",
+                        "excluded": false
+                    },
+                    {
+                        "name": "direction#set",
+                        "excluded": false
+                    },
+                    {
+                        "name": "followDuration#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "followDuration#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "follow#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "follow#set",
+                        "excluded": true
+                    },
+                    {
+                        "name": "speedModifier#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "LateRun",
+                        "excluded": false
+                    },
+                    {
+                        "name": "PostBuild",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Follow",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Restart",
+                        "excluded": true
+                    },
+                    {
+                        "name": "SetPercent",
+                        "excluded": false
+                    },
+                    {
+                        "name": "SetDistance",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Move",
+                        "excluded": true
+                    },
+                    {
+                        "name": "Move$1",
+                        "excluded": false
+                    },
+                    {
+                        "name": "DoTravel",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.WaitForSeconds",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "ctor",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Reset",
+                        "excluded": false
                     }
                 ]
             }
