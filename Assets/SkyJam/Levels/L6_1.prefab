@@ -2537,7 +2537,7 @@ MonoBehaviour:
   queues: {fileID: 4232263316415437506}
   vehicles: {fileID: 5122518098932568224}
   maxMove: 50
-  thoiGian: 120
+  thoiGian: 60
 --- !u!1 &3347202554028372200
 GameObject:
   m_ObjectHideFlags: 0
@@ -8634,6 +8634,10 @@ PrefabInstance:
     - target: {fileID: 7659399290232720539, guid: 0a86275e4d121f24897f60a5f18bcd37, type: 3}
       propertyPath: m_Layer
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7659399290232720539, guid: 0a86275e4d121f24897f60a5f18bcd37, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8126963424197928996, guid: 0a86275e4d121f24897f60a5f18bcd37, type: 3}
       propertyPath: m_Enabled

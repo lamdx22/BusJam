@@ -20,6 +20,8 @@ namespace SkyJam
         public Camera levelCam;
         #region Level State
         
+        public SnowScreen snowScreen;
+
         private LevelStatus state = LevelStatus.None;
         public LevelStatus State { get { return state; } }
         private BoardController board;
@@ -318,6 +320,8 @@ namespace SkyJam
 
             state = LevelStatus.Booster;
 
+            snowScreen.Init();
+
             ScreenPlayable.instance?.InitLevel(LevelNum);
 
             Hiker.HikerLog.LogEditorOnly("Level Init", "Level", "yellow");
@@ -577,6 +581,11 @@ namespace SkyJam
             }
         }
 
+        public float GetPercentageTimePassed()
+        {
+            return levelTime / limitTime;
+        }
+
         void OnLevelTimeOut()
         {
             if (state == LevelStatus.Started)
@@ -585,10 +594,12 @@ namespace SkyJam
                 Hiker.HikerLog.LogEditorOnly("TIMEOUT", "LEVEL", "orange");
                 ScreenPlayable.instance?.dongHo.UpdateTime();
 
+                snowScreen.ShowIceScreen();
+
                 HikerUtils.DoAction(this, () =>
                 {
                     GameManager.instance.OnLose();
-                }, 0.5f, true);
+                }, 1f, true);
             }
         }
 

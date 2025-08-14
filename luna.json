@@ -1,8 +1,8 @@
 {
     "version": "6.3.0",
     "projectId": "3f7c89647224b7448946645f95d33821",
-    "applicationID": 0,
-    "creativeName": "250812_LamDX_ColorBusJam_test7",
+    "applicationID": 31279,
+    "creativeName": "250814_LamDX_ColorBusJam_test10",
     "pgServer": "EU",
     "window": {
         "‐″": true
@@ -154,7 +154,6 @@
                 "Assets/SkyJam/3D/PowerUps/ITEM_POW_Freeze.png",
                 "Assets/SkyJam/3D/PowerUps/POW_hammer.fbx",
                 "Assets/SkyJam/3D/PowerUps/POW_magnet.fbx",
-                "Assets/SkyJam/3D/ice.png",
                 "Assets/SkyJam/3D/rock.png",
                 "Assets/SkyJam/3D/stone.fbx",
                 "Assets/SkyJam/3D/stone.png",
@@ -187,10 +186,6 @@
                 "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
                 "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
                 "Assets/TextMesh Pro/Sprites/EmojiOne.png",
-                "Assets/VFX/Materials/IceFilter.png",
-                "Assets/VFX/Materials/IcyTexture.png",
-                "Assets/VFX/Materials/SnowflakeGlow.png",
-                "Assets/VFX/Snowflake_FX.prefab",
                 "**/Editor/",
                 "**/FacebookSDK/",
                 "**/googleads**/",
@@ -226,7 +221,12 @@
                 "Stubs/AppsFlyer",
                 "Stubs/IronSource",
                 "Stubs/Vungle",
-                "Stubs/MoreMountains.NiceVibrations"
+                "Stubs/MoreMountains.NiceVibrations",
+                "Assets/DreamGrid/Characters/Bear/Models/monster_bear01_Body.FBX",
+                "Assets/DreamGrid/Characters/Bear/Models/monster_bear01_Body.FBX",
+                "Assets/DreamGrid/Characters/Bear/Models/monster_bear01_weapon01.FBX",
+                "Assets/DreamGrid/Characters/Bear/Textures/monster_bear01_Body1.png",
+                "Assets/DreamGrid/Characters/Bear/Textures/monster_bear01_weapon01.png"
             ],
             "includes": [
                 "Assets/Resources/DOTweenSettings.asset",
@@ -1917,10 +1917,6 @@
             },
             {
                 "name": "UnityEngine.TouchScreenKeyboard",
-                "excluded": true
-            },
-            {
-                "name": "UnityEngine.TrailModule",
                 "excluded": true
             },
             {
@@ -10193,7 +10189,7 @@
                 "instanceMethods": [
                     {
                         "name": "format",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "equals",
@@ -21217,7 +21213,7 @@
                     },
                     {
                         "name": "orthographicSize#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "orthographicSize#set",
@@ -27243,7 +27239,7 @@
                     },
                     {
                         "name": "ResizeLineExtents",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetTextInfo",
@@ -33369,6 +33365,10 @@
                     },
                     {
                         "name": "OnMonsterKill",
+                        "excluded": false
+                    },
+                    {
+                        "name": "GetPercentageTimePassed",
                         "excluded": false
                     }
                 ]
@@ -47423,11 +47423,11 @@
                 "instanceMethods": [
                     {
                         "name": "main#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "emission#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "colorBySpeed#get",
@@ -47447,7 +47447,7 @@
                     },
                     {
                         "name": "shape#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "sizeBySpeed#get",
@@ -47463,7 +47463,7 @@
                     },
                     {
                         "name": "velocityOverLifetime#get",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "noise#get",
@@ -47619,11 +47619,11 @@
                     },
                     {
                         "name": "init",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "ctor",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "GetParticles",
@@ -47643,7 +47643,7 @@
                     },
                     {
                         "name": "Play",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Play$1",
@@ -47659,7 +47659,7 @@
                     },
                     {
                         "name": "Stop",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Stop$1",
@@ -47675,7 +47675,7 @@
                     },
                     {
                         "name": "Clear",
-                        "excluded": true
+                        "excluded": false
                     },
                     {
                         "name": "Simulate",
@@ -50215,6 +50215,50 @@
                     },
                     {
                         "name": "Reset",
+                        "excluded": false
+                    }
+                ]
+            },
+            {
+                "className": "UnityEngine.TrailModule",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "enabled#get",
+                        "excluded": true
+                    },
+                    {
+                        "name": "enabled#set",
+                        "excluded": true
+                    }
+                ]
+            },
+            {
+                "className": "SnowScreen",
+                "staticMethods": [],
+                "instanceMethods": [
+                    {
+                        "name": "init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Start",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ShapeScaler",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Update",
+                        "excluded": false
+                    },
+                    {
+                        "name": "Init",
+                        "excluded": false
+                    },
+                    {
+                        "name": "ShowIceScreen",
                         "excluded": false
                     }
                 ]
